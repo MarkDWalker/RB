@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleIdentifier</key>
+	<string>com.mac.mdwalker.resibeam</string>
+	<key>enableMaxWidth</key>
+	<false/>
+	<key>helpbookIcon</key>
+	<string>6938FEAC-4783-43E9-AA9B-8A9CB4E20326.png</string>
+	<key>helpbookName</key>
+	<string>Resi-Beam Help</string>
+	<key>maxWidth</key>
+	<integer>1000</integer>
+	<key>outputLanguage</key>
+	<string>en</string>
+	<key>renderAs</key>
+	<integer>1</integer>
+</dict>
+</plist>

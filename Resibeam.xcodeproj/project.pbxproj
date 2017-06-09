@@ -1,0 +1,984 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98D58DDB1EE74C9D0046735D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58DDA1EE74C9D0046735D /* AppDelegate.swift */; };
+		98D58DDD1EE74C9D0046735D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58DDC1EE74C9D0046735D /* ViewController.swift */; };
+		98D58DDF1EE74C9D0046735D /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58DDE1EE74C9D0046735D /* Document.swift */; };
+		98D58DE11EE74C9D0046735D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98D58DE01EE74C9D0046735D /* Assets.xcassets */; };
+		98D58DE41EE74C9D0046735D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98D58DE21EE74C9D0046735D /* Main.storyboard */; };
+		98D58DEF1EE74C9D0046735D /* ResibeamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58DEE1EE74C9D0046735D /* ResibeamTests.swift */; };
+		98D58DFA1EE74C9D0046735D /* ResibeamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58DF91EE74C9D0046735D /* ResibeamUITests.swift */; };
+		98D58E4B1EE74EA30046735D /* vc_cdSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E081EE74EA30046735D /* vc_cdSelector.swift */; };
+		98D58E4C1EE74EA30046735D /* vc_LoadGen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E091EE74EA30046735D /* vc_LoadGen3.swift */; };
+		98D58E4D1EE74EA30046735D /* vc_WoodBeamDesignPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E0A1EE74EA30046735D /* vc_WoodBeamDesignPanel.swift */; };
+		98D58E4E1EE74EA30046735D /* vc_LVLBeamDesignPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E0B1EE74EA30046735D /* vc_LVLBeamDesignPanel.swift */; };
+		98D58E4F1EE74EA30046735D /* MWLoadComboResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E0C1EE74EA30046735D /* MWLoadComboResult.swift */; };
+		98D58E501EE74EA30046735D /* vc_SteelWBeamDesignPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E0D1EE74EA30046735D /* vc_SteelWBeamDesignPanel.swift */; };
+		98D58E511EE74EA30046735D /* MWButtonImageTableCellViewPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E0E1EE74EA30046735D /* MWButtonImageTableCellViewPrototype.swift */; };
+		98D58E521EE74EA30046735D /* vc_BeamData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E0F1EE74EA30046735D /* vc_BeamData.swift */; };
+		98D58E531EE74EA30046735D /* tvc_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E101EE74EA30046735D /* tvc_Main.swift */; };
+		98D58E541EE74EA30046735D /* tvc_BeamDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E111EE74EA30046735D /* tvc_BeamDesign.swift */; };
+		98D58E551EE74EA30046735D /* vc_SplitView_Beam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E121EE74EA30046735D /* vc_SplitView_Beam.swift */; };
+		98D58E571EE74EA30046735D /* MWStructuralEquations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E141EE74EA30046735D /* MWStructuralEquations.swift */; };
+		98D58E591EE74EA30046735D /* vc_LoadGen5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E161EE74EA30046735D /* vc_LoadGen5.swift */; };
+		98D58E5A1EE74EA30046735D /* MWBeamAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E171EE74EA30046735D /* MWBeamAnalysis.swift */; };
+		98D58E5B1EE74EA30046735D /* MWPersistentBeamInterfaceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E181EE74EA30046735D /* MWPersistentBeamInterfaceData.swift */; };
+		98D58E5C1EE74EA30046735D /* MWLVLDesignData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E191EE74EA30046735D /* MWLVLDesignData.swift */; };
+		98D58E5D1EE74EA30046735D /* vc_WBeamDesignPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1A1EE74EA30046735D /* vc_WBeamDesignPanel.swift */; };
+		98D58E5E1EE74EA30046735D /* vc_Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1B1EE74EA30046735D /* vc_Calculations.swift */; };
+		98D58E5F1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1C1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift */; };
+		98D58E601EE74EA30046735D /* MWBeamGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1D1EE74EA30046735D /* MWBeamGraphView.swift */; };
+		98D58E611EE74EA30046735D /* vc_BeamResultsTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1E1EE74EA30046735D /* vc_BeamResultsTables.swift */; };
+		98D58E621EE74EA30046735D /* CustomCell_GereratorConditionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1F1EE74EA30046735D /* CustomCell_GereratorConditionsCell.swift */; };
+		98D58E631EE74EA30046735D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E201EE74EA30046735D /* Extensions.swift */; };
+		98D58E641EE74EA30046735D /* LintelConditionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E211EE74EA30046735D /* LintelConditionEnum.swift */; };
+		98D58E651EE74EA30046735D /* MWBeamGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E221EE74EA30046735D /* MWBeamGeometry.swift */; };
+		98D58E661EE74EA30046735D /* MWLoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E231EE74EA30046735D /* MWLoadData.swift */; };
+		98D58E671EE74EA30046735D /* MWLoadGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E241EE74EA30046735D /* MWLoadGraphView.swift */; };
+		98D58E681EE74EA30046735D /* MWLVLBeamDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E251EE74EA30046735D /* MWLVLBeamDesign.swift */; };
+		98D58E691EE74EA30046735D /* MWLVLDesignValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E261EE74EA30046735D /* MWLVLDesignValues.swift */; };
+		98D58E6A1EE74EA30046735D /* MWLVLLoadedDesignSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E271EE74EA30046735D /* MWLVLLoadedDesignSection.swift */; };
+		98D58E6B1EE74EA30046735D /* MWLVLMaterialLimits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E281EE74EA30046735D /* MWLVLMaterialLimits.swift */; };
+		98D58E6C1EE74EA30046735D /* MWLVLSectionDesignData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E291EE74EA30046735D /* MWLVLSectionDesignData.swift */; };
+		98D58E6D1EE74EA30046735D /* MWSteelFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E2A1EE74EA30046735D /* MWSteelFactors.swift */; };
+		98D58E6E1EE74EA30046735D /* MWSteelMaterialLimits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E2B1EE74EA30046735D /* MWSteelMaterialLimits.swift */; };
+		98D58E6F1EE74EA30046735D /* MWSteelWBeamDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E2C1EE74EA30046735D /* MWSteelWBeamDesign.swift */; };
+		98D58E701EE74EA30046735D /* MWSteelWDesignValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E2D1EE74EA30046735D /* MWSteelWDesignValues.swift */; };
+		98D58E711EE74EA30046735D /* MWSteelWFSCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E2E1EE74EA30046735D /* MWSteelWFSCalculator.swift */; };
+		98D58E721EE74EA30046735D /* MWSteelWSectionDesignData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E2F1EE74EA30046735D /* MWSteelWSectionDesignData.swift */; };
+		98D58E731EE74EA30046735D /* MWStructuralGraphData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E301EE74EA30046735D /* MWStructuralGraphData.swift */; };
+		98D58E741EE74EA30046735D /* MWTextField_NumberInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E311EE74EA30046735D /* MWTextField_NumberInput.swift */; };
+		98D58E751EE74EA30046735D /* MWWoodBeamDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E321EE74EA30046735D /* MWWoodBeamDesign.swift */; };
+		98D58E761EE74EA30046735D /* MWWoodCLCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E331EE74EA30046735D /* MWWoodCLCalculator.swift */; };
+		98D58E771EE74EA30046735D /* MWWoodDesignValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E341EE74EA30046735D /* MWWoodDesignValues.swift */; };
+		98D58E781EE74EA30046735D /* MWWoodFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E351EE74EA30046735D /* MWWoodFactors.swift */; };
+		98D58E791EE74EA30046735D /* MWWoodLoadedDesignSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E361EE74EA30046735D /* MWWoodLoadedDesignSection.swift */; };
+		98D58E7A1EE74EA30046735D /* MWWoodMaterialLimits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E371EE74EA30046735D /* MWWoodMaterialLimits.swift */; };
+		98D58E7B1EE74EA30046735D /* MWWoodSectionDesignData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E381EE74EA30046735D /* MWWoodSectionDesignData.swift */; };
+		98D58E7C1EE74EA30046735D /* vc_BeamGraphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E391EE74EA30046735D /* vc_BeamGraphs.swift */; };
+		98D58E7D1EE74EA30046735D /* vc_clSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E3A1EE74EA30046735D /* vc_clSelector.swift */; };
+		98D58E7E1EE74EA30046735D /* vc_FSFbSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E3B1EE74EA30046735D /* vc_FSFbSelector.swift */; };
+		98D58E7F1EE74EA30046735D /* vc_FSFvSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E3C1EE74EA30046735D /* vc_FSFvSelector.swift */; };
+		98D58E801EE74EA30046735D /* vc_GeneratorConditionSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E3D1EE74EA30046735D /* vc_GeneratorConditionSelector.swift */; };
+		98D58E811EE74EA30046735D /* vc_LoadGen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E3E1EE74EA30046735D /* vc_LoadGen1.swift */; };
+		98D58E821EE74EA30046735D /* vc_LoadGen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E3F1EE74EA30046735D /* vc_LoadGen2.swift */; };
+		98D58E831EE74EA30046735D /* vc_LoadGen4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E401EE74EA30046735D /* vc_LoadGen4.swift */; };
+		98D58E841EE74EA30046735D /* vc_RadioSelectLoadType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E411EE74EA30046735D /* vc_RadioSelectLoadType.swift */; };
+		98D58E851EE74EA30046735D /* WoodGradeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E421EE74EA30046735D /* WoodGradeEnum.swift */; };
+		98D58E861EE74EA30046735D /* WoodSpeciesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E431EE74EA30046735D /* WoodSpeciesEnum.swift */; };
+		98D58E871EE74EA30046735D /* steelGradeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E441EE74EA30046735D /* steelGradeEnum.swift */; };
+		98D58E881EE74EA30046735D /* vc_SnowMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E451EE74EA30046735D /* vc_SnowMap.swift */; };
+		98D58E891EE74EA30046735D /* vc_RoofDLInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E461EE74EA30046735D /* vc_RoofDLInfo.swift */; };
+		98D58E8A1EE74EA30046735D /* vc_FloorLLInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E471EE74EA30046735D /* vc_FloorLLInfo.swift */; };
+		98D58E8B1EE74EA30046735D /* vc_RoofLiveLoadChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E481EE74EA30046735D /* vc_RoofLiveLoadChart.swift */; };
+		98D58E8C1EE74EA30046735D /* LVLManufacturerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E491EE74EA30046735D /* LVLManufacturerEnum.swift */; };
+		98D58E8D1EE74EA30046735D /* LVLGradeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E4A1EE74EA30046735D /* LVLGradeEnum.swift */; };
+		98D58E981EE74EBF0046735D /* 12x33_concentrated.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58E8F1EE74EBF0046735D /* 12x33_concentrated.png */; };
+		98D58E991EE74EBF0046735D /* 40x33 LinearDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58E901EE74EBF0046735D /* 40x33 LinearDown.png */; };
+		98D58E9A1EE74EBF0046735D /* 40x33_LinearUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58E911EE74EBF0046735D /* 40x33_LinearUp.png */; };
+		98D58E9B1EE74EBF0046735D /* 40x33_Uniform.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58E921EE74EBF0046735D /* 40x33_Uniform.png */; };
+		98D58E9C1EE74EBF0046735D /* Concentrated1.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58E931EE74EBF0046735D /* Concentrated1.png */; };
+		98D58E9D1EE74EBF0046735D /* glyphicons-191-circle-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58E941EE74EBF0046735D /* glyphicons-191-circle-plus.png */; };
+		98D58E9E1EE74EBF0046735D /* glyphicons-192-circle-minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58E951EE74EBF0046735D /* glyphicons-192-circle-minus.png */; };
+		98D58E9F1EE74EBF0046735D /* Row_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58E961EE74EBF0046735D /* Row_Down.png */; };
+		98D58EA01EE74EBF0046735D /* row_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58E971EE74EBF0046735D /* row_Up.png */; };
+		98D58EAF1EE74EE00046735D /* E_Main.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EA21EE74EE00046735D /* E_Main.png */; };
+		98D58EB01EE74EE00046735D /* E_Section.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EA31EE74EE00046735D /* E_Section.png */; };
+		98D58EB11EE74EE00046735D /* D_FloorJoistMain.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EA41EE74EE00046735D /* D_FloorJoistMain.png */; };
+		98D58EB21EE74EE00046735D /* C_OverView.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EA51EE74EE00046735D /* C_OverView.png */; };
+		98D58EB31EE74EE00046735D /* C_AlignedAbove.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EA61EE74EE00046735D /* C_AlignedAbove.png */; };
+		98D58EB41EE74EE00046735D /* FloorLiveLoadChart.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EA71EE74EE00046735D /* FloorLiveLoadChart.png */; };
+		98D58EB51EE74EE00046735D /* B_Framing.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EA81EE74EE00046735D /* B_Framing.png */; };
+		98D58EB61EE74EE00046735D /* B_Section.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EA91EE74EE00046735D /* B_Section.png */; };
+		98D58EB71EE74EE00046735D /* LiveLoadChart.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EAA1EE74EE00046735D /* LiveLoadChart.png */; };
+		98D58EB81EE74EE00046735D /* SnowLoadMap_West.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EAB1EE74EE00046735D /* SnowLoadMap_West.png */; };
+		98D58EB91EE74EE00046735D /* SnowLoadMapEast.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EAC1EE74EE00046735D /* SnowLoadMapEast.png */; };
+		98D58EBA1EE74EE00046735D /* A_Framing.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EAD1EE74EE00046735D /* A_Framing.png */; };
+		98D58EBB1EE74EE00046735D /* A_Section.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EAE1EE74EE00046735D /* A_Section.png */; };
+		98D58EBD1EE74F270046735D /* HelpBook.paradocs in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EBC1EE74F270046735D /* HelpBook.paradocs */; };
+		98D58EC71EE74F480046735D /* wc_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58EBE1EE74F480046735D /* wc_Main.swift */; };
+		98D58EC81EE74F480046735D /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58EBF1EE74F480046735D /* WindowController.swift */; };
+		98D58EC91EE74F480046735D /* MWCalulationTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58EC01EE74F480046735D /* MWCalulationTextView.swift */; };
+		98D58ECA1EE74F480046735D /* MWCustomTableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58EC11EE74F480046735D /* MWCustomTableRowView.swift */; };
+		98D58ECB1EE74F480046735D /* MWNSViewForTBStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58EC21EE74F480046735D /* MWNSViewForTBStatus.swift */; };
+		98D58ECC1EE74F480046735D /* MWSaveFileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58EC31EE74F480046735D /* MWSaveFileData.swift */; };
+		98D58ECD1EE74F480046735D /* MWTextFormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58EC41EE74F480046735D /* MWTextFormatHelper.swift */; };
+		98D58ECE1EE74F480046735D /* v0004_docCentered.icns in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EC51EE74F480046735D /* v0004_docCentered.icns */; };
+		98D58ECF1EE74F480046735D /* v0004_DocFull.icns in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EC61EE74F480046735D /* v0004_DocFull.icns */; };
+		98D58ED11EE750B10046735D /* MWCollectionReorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58ED01EE750B10046735D /* MWCollectionReorder.swift */; };
+		98D58ED51EE755A50046735D /* C_NarrowerAbove.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58ED21EE755A50046735D /* C_NarrowerAbove.png */; };
+		98D58ED61EE755A50046735D /* C_NothingAbove.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58ED31EE755A50046735D /* C_NothingAbove.png */; };
+		98D58ED71EE755A50046735D /* C_OffsetAbove.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58ED41EE755A50046735D /* C_OffsetAbove.png */; };
+		98D58EDA1EE7591C0046735D /* v0004_docCentered.icns in Resources */ = {isa = PBXBuildFile; fileRef = 98D58ED91EE7591C0046735D /* v0004_docCentered.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98D58DEB1EE74C9D0046735D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98D58DCF1EE74C9D0046735D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98D58DD61EE74C9D0046735D;
+			remoteInfo = Resibeam;
+		};
+		98D58DF61EE74C9D0046735D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98D58DCF1EE74C9D0046735D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98D58DD61EE74C9D0046735D;
+			remoteInfo = Resibeam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		98D58DD71EE74C9D0046735D /* Resibeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resibeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D58DDA1EE74C9D0046735D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98D58DDC1EE74C9D0046735D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98D58DDE1EE74C9D0046735D /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		98D58DE01EE74C9D0046735D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98D58DE31EE74C9D0046735D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98D58DE51EE74C9D0046735D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D58DEA1EE74C9D0046735D /* ResibeamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResibeamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D58DEE1EE74C9D0046735D /* ResibeamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResibeamTests.swift; sourceTree = "<group>"; };
+		98D58DF01EE74C9D0046735D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D58DF51EE74C9D0046735D /* ResibeamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResibeamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D58DF91EE74C9D0046735D /* ResibeamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResibeamUITests.swift; sourceTree = "<group>"; };
+		98D58DFB1EE74C9D0046735D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D58E081EE74EA30046735D /* vc_cdSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_cdSelector.swift; path = Beams/vc_cdSelector.swift; sourceTree = "<group>"; };
+		98D58E091EE74EA30046735D /* vc_LoadGen3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LoadGen3.swift; path = Beams/vc_LoadGen3.swift; sourceTree = "<group>"; };
+		98D58E0A1EE74EA30046735D /* vc_WoodBeamDesignPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_WoodBeamDesignPanel.swift; path = Beams/vc_WoodBeamDesignPanel.swift; sourceTree = "<group>"; };
+		98D58E0B1EE74EA30046735D /* vc_LVLBeamDesignPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LVLBeamDesignPanel.swift; path = Beams/vc_LVLBeamDesignPanel.swift; sourceTree = "<group>"; };
+		98D58E0C1EE74EA30046735D /* MWLoadComboResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWLoadComboResult.swift; path = Beams/MWLoadComboResult.swift; sourceTree = "<group>"; };
+		98D58E0D1EE74EA30046735D /* vc_SteelWBeamDesignPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_SteelWBeamDesignPanel.swift; path = Beams/vc_SteelWBeamDesignPanel.swift; sourceTree = "<group>"; };
+		98D58E0E1EE74EA30046735D /* MWButtonImageTableCellViewPrototype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWButtonImageTableCellViewPrototype.swift; path = Beams/MWButtonImageTableCellViewPrototype.swift; sourceTree = "<group>"; };
+		98D58E0F1EE74EA30046735D /* vc_BeamData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_BeamData.swift; path = Beams/vc_BeamData.swift; sourceTree = "<group>"; };
+		98D58E101EE74EA30046735D /* tvc_Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tvc_Main.swift; path = Beams/tvc_Main.swift; sourceTree = "<group>"; };
+		98D58E111EE74EA30046735D /* tvc_BeamDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tvc_BeamDesign.swift; path = Beams/tvc_BeamDesign.swift; sourceTree = "<group>"; };
+		98D58E121EE74EA30046735D /* vc_SplitView_Beam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_SplitView_Beam.swift; path = Beams/vc_SplitView_Beam.swift; sourceTree = "<group>"; };
+		98D58E141EE74EA30046735D /* MWStructuralEquations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWStructuralEquations.swift; path = Beams/MWStructuralEquations.swift; sourceTree = "<group>"; };
+		98D58E161EE74EA30046735D /* vc_LoadGen5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LoadGen5.swift; path = Beams/vc_LoadGen5.swift; sourceTree = "<group>"; };
+		98D58E171EE74EA30046735D /* MWBeamAnalysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWBeamAnalysis.swift; path = Beams/MWBeamAnalysis.swift; sourceTree = "<group>"; };
+		98D58E181EE74EA30046735D /* MWPersistentBeamInterfaceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWPersistentBeamInterfaceData.swift; path = Beams/MWPersistentBeamInterfaceData.swift; sourceTree = "<group>"; };
+		98D58E191EE74EA30046735D /* MWLVLDesignData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWLVLDesignData.swift; path = Beams/MWLVLDesignData.swift; sourceTree = "<group>"; };
+		98D58E1A1EE74EA30046735D /* vc_WBeamDesignPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_WBeamDesignPanel.swift; path = Beams/vc_WBeamDesignPanel.swift; sourceTree = "<group>"; };
+		98D58E1B1EE74EA30046735D /* vc_Calculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_Calculations.swift; path = Beams/vc_Calculations.swift; sourceTree = "<group>"; };
+		98D58E1C1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWSteelWLoadedDesignSection.swift; path = Beams/MWSteelWLoadedDesignSection.swift; sourceTree = "<group>"; };
+		98D58E1D1EE74EA30046735D /* MWBeamGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWBeamGraphView.swift; path = Beams/MWBeamGraphView.swift; sourceTree = "<group>"; };
+		98D58E1E1EE74EA30046735D /* vc_BeamResultsTables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_BeamResultsTables.swift; path = Beams/vc_BeamResultsTables.swift; sourceTree = "<group>"; };
+		98D58E1F1EE74EA30046735D /* CustomCell_GereratorConditionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCell_GereratorConditionsCell.swift; path = Beams/CustomCell_GereratorConditionsCell.swift; sourceTree = "<group>"; };
+		98D58E201EE74EA30046735D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Beams/Extensions.swift; sourceTree = "<group>"; };
+		98D58E211EE74EA30046735D /* LintelConditionEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LintelConditionEnum.swift; path = Beams/LintelConditionEnum.swift; sourceTree = "<group>"; };
+		98D58E221EE74EA30046735D /* MWBeamGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWBeamGeometry.swift; path = Beams/MWBeamGeometry.swift; sourceTree = "<group>"; };
+		98D58E231EE74EA30046735D /* MWLoadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWLoadData.swift; path = Beams/MWLoadData.swift; sourceTree = "<group>"; };
+		98D58E241EE74EA30046735D /* MWLoadGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWLoadGraphView.swift; path = Beams/MWLoadGraphView.swift; sourceTree = "<group>"; };
+		98D58E251EE74EA30046735D /* MWLVLBeamDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWLVLBeamDesign.swift; path = Beams/MWLVLBeamDesign.swift; sourceTree = "<group>"; };
+		98D58E261EE74EA30046735D /* MWLVLDesignValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWLVLDesignValues.swift; path = Beams/MWLVLDesignValues.swift; sourceTree = "<group>"; };
+		98D58E271EE74EA30046735D /* MWLVLLoadedDesignSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWLVLLoadedDesignSection.swift; path = Beams/MWLVLLoadedDesignSection.swift; sourceTree = "<group>"; };
+		98D58E281EE74EA30046735D /* MWLVLMaterialLimits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWLVLMaterialLimits.swift; path = Beams/MWLVLMaterialLimits.swift; sourceTree = "<group>"; };
+		98D58E291EE74EA30046735D /* MWLVLSectionDesignData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWLVLSectionDesignData.swift; path = Beams/MWLVLSectionDesignData.swift; sourceTree = "<group>"; };
+		98D58E2A1EE74EA30046735D /* MWSteelFactors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWSteelFactors.swift; path = Beams/MWSteelFactors.swift; sourceTree = "<group>"; };
+		98D58E2B1EE74EA30046735D /* MWSteelMaterialLimits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWSteelMaterialLimits.swift; path = Beams/MWSteelMaterialLimits.swift; sourceTree = "<group>"; };
+		98D58E2C1EE74EA30046735D /* MWSteelWBeamDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWSteelWBeamDesign.swift; path = Beams/MWSteelWBeamDesign.swift; sourceTree = "<group>"; };
+		98D58E2D1EE74EA30046735D /* MWSteelWDesignValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWSteelWDesignValues.swift; path = Beams/MWSteelWDesignValues.swift; sourceTree = "<group>"; };
+		98D58E2E1EE74EA30046735D /* MWSteelWFSCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWSteelWFSCalculator.swift; path = Beams/MWSteelWFSCalculator.swift; sourceTree = "<group>"; };
+		98D58E2F1EE74EA30046735D /* MWSteelWSectionDesignData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWSteelWSectionDesignData.swift; path = Beams/MWSteelWSectionDesignData.swift; sourceTree = "<group>"; };
+		98D58E301EE74EA30046735D /* MWStructuralGraphData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWStructuralGraphData.swift; path = Beams/MWStructuralGraphData.swift; sourceTree = "<group>"; };
+		98D58E311EE74EA30046735D /* MWTextField_NumberInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWTextField_NumberInput.swift; path = Beams/MWTextField_NumberInput.swift; sourceTree = "<group>"; };
+		98D58E321EE74EA30046735D /* MWWoodBeamDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWWoodBeamDesign.swift; path = Beams/MWWoodBeamDesign.swift; sourceTree = "<group>"; };
+		98D58E331EE74EA30046735D /* MWWoodCLCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWWoodCLCalculator.swift; path = Beams/MWWoodCLCalculator.swift; sourceTree = "<group>"; };
+		98D58E341EE74EA30046735D /* MWWoodDesignValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWWoodDesignValues.swift; path = Beams/MWWoodDesignValues.swift; sourceTree = "<group>"; };
+		98D58E351EE74EA30046735D /* MWWoodFactors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWWoodFactors.swift; path = Beams/MWWoodFactors.swift; sourceTree = "<group>"; };
+		98D58E361EE74EA30046735D /* MWWoodLoadedDesignSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWWoodLoadedDesignSection.swift; path = Beams/MWWoodLoadedDesignSection.swift; sourceTree = "<group>"; };
+		98D58E371EE74EA30046735D /* MWWoodMaterialLimits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWWoodMaterialLimits.swift; path = Beams/MWWoodMaterialLimits.swift; sourceTree = "<group>"; };
+		98D58E381EE74EA30046735D /* MWWoodSectionDesignData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWWoodSectionDesignData.swift; path = Beams/MWWoodSectionDesignData.swift; sourceTree = "<group>"; };
+		98D58E391EE74EA30046735D /* vc_BeamGraphs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_BeamGraphs.swift; path = Beams/vc_BeamGraphs.swift; sourceTree = "<group>"; };
+		98D58E3A1EE74EA30046735D /* vc_clSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_clSelector.swift; path = Beams/vc_clSelector.swift; sourceTree = "<group>"; };
+		98D58E3B1EE74EA30046735D /* vc_FSFbSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_FSFbSelector.swift; path = Beams/vc_FSFbSelector.swift; sourceTree = "<group>"; };
+		98D58E3C1EE74EA30046735D /* vc_FSFvSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_FSFvSelector.swift; path = Beams/vc_FSFvSelector.swift; sourceTree = "<group>"; };
+		98D58E3D1EE74EA30046735D /* vc_GeneratorConditionSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_GeneratorConditionSelector.swift; path = Beams/vc_GeneratorConditionSelector.swift; sourceTree = "<group>"; };
+		98D58E3E1EE74EA30046735D /* vc_LoadGen1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LoadGen1.swift; path = Beams/vc_LoadGen1.swift; sourceTree = "<group>"; };
+		98D58E3F1EE74EA30046735D /* vc_LoadGen2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LoadGen2.swift; path = Beams/vc_LoadGen2.swift; sourceTree = "<group>"; };
+		98D58E401EE74EA30046735D /* vc_LoadGen4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LoadGen4.swift; path = Beams/vc_LoadGen4.swift; sourceTree = "<group>"; };
+		98D58E411EE74EA30046735D /* vc_RadioSelectLoadType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_RadioSelectLoadType.swift; path = Beams/vc_RadioSelectLoadType.swift; sourceTree = "<group>"; };
+		98D58E421EE74EA30046735D /* WoodGradeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WoodGradeEnum.swift; path = Beams/WoodGradeEnum.swift; sourceTree = "<group>"; };
+		98D58E431EE74EA30046735D /* WoodSpeciesEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WoodSpeciesEnum.swift; path = Beams/WoodSpeciesEnum.swift; sourceTree = "<group>"; };
+		98D58E441EE74EA30046735D /* steelGradeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = steelGradeEnum.swift; path = Beams/steelGradeEnum.swift; sourceTree = "<group>"; };
+		98D58E451EE74EA30046735D /* vc_SnowMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_SnowMap.swift; path = Beams/vc_SnowMap.swift; sourceTree = "<group>"; };
+		98D58E461EE74EA30046735D /* vc_RoofDLInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_RoofDLInfo.swift; path = Beams/vc_RoofDLInfo.swift; sourceTree = "<group>"; };
+		98D58E471EE74EA30046735D /* vc_FloorLLInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_FloorLLInfo.swift; path = Beams/vc_FloorLLInfo.swift; sourceTree = "<group>"; };
+		98D58E481EE74EA30046735D /* vc_RoofLiveLoadChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_RoofLiveLoadChart.swift; path = Beams/vc_RoofLiveLoadChart.swift; sourceTree = "<group>"; };
+		98D58E491EE74EA30046735D /* LVLManufacturerEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LVLManufacturerEnum.swift; path = Beams/LVLManufacturerEnum.swift; sourceTree = "<group>"; };
+		98D58E4A1EE74EA30046735D /* LVLGradeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LVLGradeEnum.swift; path = Beams/LVLGradeEnum.swift; sourceTree = "<group>"; };
+		98D58E8F1EE74EBF0046735D /* 12x33_concentrated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 12x33_concentrated.png; path = "Beams/Beam Images/12x33_concentrated.png"; sourceTree = "<group>"; };
+		98D58E901EE74EBF0046735D /* 40x33 LinearDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "40x33 LinearDown.png"; path = "Beams/Beam Images/40x33 LinearDown.png"; sourceTree = "<group>"; };
+		98D58E911EE74EBF0046735D /* 40x33_LinearUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40x33_LinearUp.png; path = "Beams/Beam Images/40x33_LinearUp.png"; sourceTree = "<group>"; };
+		98D58E921EE74EBF0046735D /* 40x33_Uniform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40x33_Uniform.png; path = "Beams/Beam Images/40x33_Uniform.png"; sourceTree = "<group>"; };
+		98D58E931EE74EBF0046735D /* Concentrated1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Concentrated1.png; path = "Beams/Beam Images/Concentrated1.png"; sourceTree = "<group>"; };
+		98D58E941EE74EBF0046735D /* glyphicons-191-circle-plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyphicons-191-circle-plus.png"; path = "Beams/Beam Images/glyphicons-191-circle-plus.png"; sourceTree = "<group>"; };
+		98D58E951EE74EBF0046735D /* glyphicons-192-circle-minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyphicons-192-circle-minus.png"; path = "Beams/Beam Images/glyphicons-192-circle-minus.png"; sourceTree = "<group>"; };
+		98D58E961EE74EBF0046735D /* Row_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Row_Down.png; path = "Beams/Beam Images/Row_Down.png"; sourceTree = "<group>"; };
+		98D58E971EE74EBF0046735D /* row_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = row_Up.png; path = "Beams/Beam Images/row_Up.png"; sourceTree = "<group>"; };
+		98D58EA21EE74EE00046735D /* E_Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E_Main.png; path = Beams/LoadGenerator_Images/E_Main.png; sourceTree = "<group>"; };
+		98D58EA31EE74EE00046735D /* E_Section.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = E_Section.png; path = Beams/LoadGenerator_Images/E_Section.png; sourceTree = "<group>"; };
+		98D58EA41EE74EE00046735D /* D_FloorJoistMain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = D_FloorJoistMain.png; path = Beams/LoadGenerator_Images/D_FloorJoistMain.png; sourceTree = "<group>"; };
+		98D58EA51EE74EE00046735D /* C_OverView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = C_OverView.png; path = Beams/LoadGenerator_Images/C_OverView.png; sourceTree = "<group>"; };
+		98D58EA61EE74EE00046735D /* C_AlignedAbove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = C_AlignedAbove.png; path = Beams/LoadGenerator_Images/C_AlignedAbove.png; sourceTree = "<group>"; };
+		98D58EA71EE74EE00046735D /* FloorLiveLoadChart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FloorLiveLoadChart.png; path = Beams/LoadGenerator_Images/FloorLiveLoadChart.png; sourceTree = "<group>"; };
+		98D58EA81EE74EE00046735D /* B_Framing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = B_Framing.png; path = Beams/LoadGenerator_Images/B_Framing.png; sourceTree = "<group>"; };
+		98D58EA91EE74EE00046735D /* B_Section.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = B_Section.png; path = Beams/LoadGenerator_Images/B_Section.png; sourceTree = "<group>"; };
+		98D58EAA1EE74EE00046735D /* LiveLoadChart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LiveLoadChart.png; path = Beams/LoadGenerator_Images/LiveLoadChart.png; sourceTree = "<group>"; };
+		98D58EAB1EE74EE00046735D /* SnowLoadMap_West.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SnowLoadMap_West.png; path = Beams/LoadGenerator_Images/SnowLoadMap_West.png; sourceTree = "<group>"; };
+		98D58EAC1EE74EE00046735D /* SnowLoadMapEast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SnowLoadMapEast.png; path = Beams/LoadGenerator_Images/SnowLoadMapEast.png; sourceTree = "<group>"; };
+		98D58EAD1EE74EE00046735D /* A_Framing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = A_Framing.png; path = Beams/LoadGenerator_Images/A_Framing.png; sourceTree = "<group>"; };
+		98D58EAE1EE74EE00046735D /* A_Section.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = A_Section.png; path = Beams/LoadGenerator_Images/A_Section.png; sourceTree = "<group>"; };
+		98D58EBC1EE74F270046735D /* HelpBook.paradocs */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = HelpBook.paradocs; sourceTree = "<group>"; };
+		98D58EBE1EE74F480046735D /* wc_Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wc_Main.swift; sourceTree = "<group>"; };
+		98D58EBF1EE74F480046735D /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		98D58EC01EE74F480046735D /* MWCalulationTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWCalulationTextView.swift; sourceTree = "<group>"; };
+		98D58EC11EE74F480046735D /* MWCustomTableRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWCustomTableRowView.swift; sourceTree = "<group>"; };
+		98D58EC21EE74F480046735D /* MWNSViewForTBStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWNSViewForTBStatus.swift; sourceTree = "<group>"; };
+		98D58EC31EE74F480046735D /* MWSaveFileData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWSaveFileData.swift; sourceTree = "<group>"; };
+		98D58EC41EE74F480046735D /* MWTextFormatHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWTextFormatHelper.swift; sourceTree = "<group>"; };
+		98D58EC51EE74F480046735D /* v0004_docCentered.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = v0004_docCentered.icns; sourceTree = "<group>"; };
+		98D58EC61EE74F480046735D /* v0004_DocFull.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = v0004_DocFull.icns; sourceTree = "<group>"; };
+		98D58ED01EE750B10046735D /* MWCollectionReorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWCollectionReorder.swift; sourceTree = "<group>"; };
+		98D58ED21EE755A50046735D /* C_NarrowerAbove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = C_NarrowerAbove.png; path = LoadGenerator_Images/C_NarrowerAbove.png; sourceTree = "<group>"; };
+		98D58ED31EE755A50046735D /* C_NothingAbove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = C_NothingAbove.png; path = LoadGenerator_Images/C_NothingAbove.png; sourceTree = "<group>"; };
+		98D58ED41EE755A50046735D /* C_OffsetAbove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = C_OffsetAbove.png; path = LoadGenerator_Images/C_OffsetAbove.png; sourceTree = "<group>"; };
+		98D58ED81EE7588F0046735D /* Resibeam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Resibeam.entitlements; sourceTree = "<group>"; };
+		98D58ED91EE7591C0046735D /* v0004_docCentered.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = v0004_docCentered.icns; path = AppIcon.iconset/v0004_docCentered.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98D58DD41EE74C9D0046735D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D58DE71EE74C9D0046735D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D58DF21EE74C9D0046735D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98D58DCE1EE74C9D0046735D = {
+			isa = PBXGroup;
+			children = (
+				98D58DD91EE74C9D0046735D /* Resibeam */,
+				98D58DED1EE74C9D0046735D /* ResibeamTests */,
+				98D58DF81EE74C9D0046735D /* ResibeamUITests */,
+				98D58DD81EE74C9D0046735D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98D58DD81EE74C9D0046735D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98D58DD71EE74C9D0046735D /* Resibeam.app */,
+				98D58DEA1EE74C9D0046735D /* ResibeamTests.xctest */,
+				98D58DF51EE74C9D0046735D /* ResibeamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98D58DD91EE74C9D0046735D /* Resibeam */ = {
+			isa = PBXGroup;
+			children = (
+				98D58ED81EE7588F0046735D /* Resibeam.entitlements */,
+				98D58ED01EE750B10046735D /* MWCollectionReorder.swift */,
+				98D58DE21EE74C9D0046735D /* Main.storyboard */,
+				98D58EBE1EE74F480046735D /* wc_Main.swift */,
+				98D58EBF1EE74F480046735D /* WindowController.swift */,
+				98D58EC01EE74F480046735D /* MWCalulationTextView.swift */,
+				98D58EC11EE74F480046735D /* MWCustomTableRowView.swift */,
+				98D58EC21EE74F480046735D /* MWNSViewForTBStatus.swift */,
+				98D58EC31EE74F480046735D /* MWSaveFileData.swift */,
+				98D58EC41EE74F480046735D /* MWTextFormatHelper.swift */,
+				98D58EC51EE74F480046735D /* v0004_docCentered.icns */,
+				98D58EC61EE74F480046735D /* v0004_DocFull.icns */,
+				98D58EBC1EE74F270046735D /* HelpBook.paradocs */,
+				98D58EA11EE74EC50046735D /* LoadGeneratorImages */,
+				98D58E8E1EE74EAA0046735D /* Beam Images */,
+				98D58E071EE74E8A0046735D /* Beams */,
+				98D58DDA1EE74C9D0046735D /* AppDelegate.swift */,
+				98D58DDC1EE74C9D0046735D /* ViewController.swift */,
+				98D58DDE1EE74C9D0046735D /* Document.swift */,
+				98D58DE01EE74C9D0046735D /* Assets.xcassets */,
+				98D58ED91EE7591C0046735D /* v0004_docCentered.icns */,
+				98D58DE51EE74C9D0046735D /* Info.plist */,
+			);
+			path = Resibeam;
+			sourceTree = "<group>";
+		};
+		98D58DED1EE74C9D0046735D /* ResibeamTests */ = {
+			isa = PBXGroup;
+			children = (
+				98D58DEE1EE74C9D0046735D /* ResibeamTests.swift */,
+				98D58DF01EE74C9D0046735D /* Info.plist */,
+			);
+			path = ResibeamTests;
+			sourceTree = "<group>";
+		};
+		98D58DF81EE74C9D0046735D /* ResibeamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98D58DF91EE74C9D0046735D /* ResibeamUITests.swift */,
+				98D58DFB1EE74C9D0046735D /* Info.plist */,
+			);
+			path = ResibeamUITests;
+			sourceTree = "<group>";
+		};
+		98D58E071EE74E8A0046735D /* Beams */ = {
+			isa = PBXGroup;
+			children = (
+				98D58E081EE74EA30046735D /* vc_cdSelector.swift */,
+				98D58E091EE74EA30046735D /* vc_LoadGen3.swift */,
+				98D58E0A1EE74EA30046735D /* vc_WoodBeamDesignPanel.swift */,
+				98D58E0B1EE74EA30046735D /* vc_LVLBeamDesignPanel.swift */,
+				98D58E0C1EE74EA30046735D /* MWLoadComboResult.swift */,
+				98D58E0D1EE74EA30046735D /* vc_SteelWBeamDesignPanel.swift */,
+				98D58E0E1EE74EA30046735D /* MWButtonImageTableCellViewPrototype.swift */,
+				98D58E0F1EE74EA30046735D /* vc_BeamData.swift */,
+				98D58E101EE74EA30046735D /* tvc_Main.swift */,
+				98D58E111EE74EA30046735D /* tvc_BeamDesign.swift */,
+				98D58E121EE74EA30046735D /* vc_SplitView_Beam.swift */,
+				98D58E141EE74EA30046735D /* MWStructuralEquations.swift */,
+				98D58E161EE74EA30046735D /* vc_LoadGen5.swift */,
+				98D58E171EE74EA30046735D /* MWBeamAnalysis.swift */,
+				98D58E181EE74EA30046735D /* MWPersistentBeamInterfaceData.swift */,
+				98D58E191EE74EA30046735D /* MWLVLDesignData.swift */,
+				98D58E1A1EE74EA30046735D /* vc_WBeamDesignPanel.swift */,
+				98D58E1B1EE74EA30046735D /* vc_Calculations.swift */,
+				98D58E1C1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift */,
+				98D58E1D1EE74EA30046735D /* MWBeamGraphView.swift */,
+				98D58E1E1EE74EA30046735D /* vc_BeamResultsTables.swift */,
+				98D58E1F1EE74EA30046735D /* CustomCell_GereratorConditionsCell.swift */,
+				98D58E201EE74EA30046735D /* Extensions.swift */,
+				98D58E211EE74EA30046735D /* LintelConditionEnum.swift */,
+				98D58E221EE74EA30046735D /* MWBeamGeometry.swift */,
+				98D58E231EE74EA30046735D /* MWLoadData.swift */,
+				98D58E241EE74EA30046735D /* MWLoadGraphView.swift */,
+				98D58E251EE74EA30046735D /* MWLVLBeamDesign.swift */,
+				98D58E261EE74EA30046735D /* MWLVLDesignValues.swift */,
+				98D58E271EE74EA30046735D /* MWLVLLoadedDesignSection.swift */,
+				98D58E281EE74EA30046735D /* MWLVLMaterialLimits.swift */,
+				98D58E291EE74EA30046735D /* MWLVLSectionDesignData.swift */,
+				98D58E2A1EE74EA30046735D /* MWSteelFactors.swift */,
+				98D58E2B1EE74EA30046735D /* MWSteelMaterialLimits.swift */,
+				98D58E2C1EE74EA30046735D /* MWSteelWBeamDesign.swift */,
+				98D58E2D1EE74EA30046735D /* MWSteelWDesignValues.swift */,
+				98D58E2E1EE74EA30046735D /* MWSteelWFSCalculator.swift */,
+				98D58E2F1EE74EA30046735D /* MWSteelWSectionDesignData.swift */,
+				98D58E301EE74EA30046735D /* MWStructuralGraphData.swift */,
+				98D58E311EE74EA30046735D /* MWTextField_NumberInput.swift */,
+				98D58E321EE74EA30046735D /* MWWoodBeamDesign.swift */,
+				98D58E331EE74EA30046735D /* MWWoodCLCalculator.swift */,
+				98D58E341EE74EA30046735D /* MWWoodDesignValues.swift */,
+				98D58E351EE74EA30046735D /* MWWoodFactors.swift */,
+				98D58E361EE74EA30046735D /* MWWoodLoadedDesignSection.swift */,
+				98D58E371EE74EA30046735D /* MWWoodMaterialLimits.swift */,
+				98D58E381EE74EA30046735D /* MWWoodSectionDesignData.swift */,
+				98D58E391EE74EA30046735D /* vc_BeamGraphs.swift */,
+				98D58E3A1EE74EA30046735D /* vc_clSelector.swift */,
+				98D58E3B1EE74EA30046735D /* vc_FSFbSelector.swift */,
+				98D58E3C1EE74EA30046735D /* vc_FSFvSelector.swift */,
+				98D58E3D1EE74EA30046735D /* vc_GeneratorConditionSelector.swift */,
+				98D58E3E1EE74EA30046735D /* vc_LoadGen1.swift */,
+				98D58E3F1EE74EA30046735D /* vc_LoadGen2.swift */,
+				98D58E401EE74EA30046735D /* vc_LoadGen4.swift */,
+				98D58E411EE74EA30046735D /* vc_RadioSelectLoadType.swift */,
+				98D58E421EE74EA30046735D /* WoodGradeEnum.swift */,
+				98D58E431EE74EA30046735D /* WoodSpeciesEnum.swift */,
+				98D58E441EE74EA30046735D /* steelGradeEnum.swift */,
+				98D58E451EE74EA30046735D /* vc_SnowMap.swift */,
+				98D58E461EE74EA30046735D /* vc_RoofDLInfo.swift */,
+				98D58E471EE74EA30046735D /* vc_FloorLLInfo.swift */,
+				98D58E481EE74EA30046735D /* vc_RoofLiveLoadChart.swift */,
+				98D58E491EE74EA30046735D /* LVLManufacturerEnum.swift */,
+				98D58E4A1EE74EA30046735D /* LVLGradeEnum.swift */,
+			);
+			name = Beams;
+			sourceTree = "<group>";
+		};
+		98D58E8E1EE74EAA0046735D /* Beam Images */ = {
+			isa = PBXGroup;
+			children = (
+				98D58E8F1EE74EBF0046735D /* 12x33_concentrated.png */,
+				98D58E901EE74EBF0046735D /* 40x33 LinearDown.png */,
+				98D58E911EE74EBF0046735D /* 40x33_LinearUp.png */,
+				98D58E921EE74EBF0046735D /* 40x33_Uniform.png */,
+				98D58E931EE74EBF0046735D /* Concentrated1.png */,
+				98D58E941EE74EBF0046735D /* glyphicons-191-circle-plus.png */,
+				98D58E951EE74EBF0046735D /* glyphicons-192-circle-minus.png */,
+				98D58E961EE74EBF0046735D /* Row_Down.png */,
+				98D58E971EE74EBF0046735D /* row_Up.png */,
+			);
+			name = "Beam Images";
+			sourceTree = "<group>";
+		};
+		98D58EA11EE74EC50046735D /* LoadGeneratorImages */ = {
+			isa = PBXGroup;
+			children = (
+				98D58ED21EE755A50046735D /* C_NarrowerAbove.png */,
+				98D58ED31EE755A50046735D /* C_NothingAbove.png */,
+				98D58ED41EE755A50046735D /* C_OffsetAbove.png */,
+				98D58EA21EE74EE00046735D /* E_Main.png */,
+				98D58EA31EE74EE00046735D /* E_Section.png */,
+				98D58EA41EE74EE00046735D /* D_FloorJoistMain.png */,
+				98D58EA51EE74EE00046735D /* C_OverView.png */,
+				98D58EA61EE74EE00046735D /* C_AlignedAbove.png */,
+				98D58EA71EE74EE00046735D /* FloorLiveLoadChart.png */,
+				98D58EA81EE74EE00046735D /* B_Framing.png */,
+				98D58EA91EE74EE00046735D /* B_Section.png */,
+				98D58EAA1EE74EE00046735D /* LiveLoadChart.png */,
+				98D58EAB1EE74EE00046735D /* SnowLoadMap_West.png */,
+				98D58EAC1EE74EE00046735D /* SnowLoadMapEast.png */,
+				98D58EAD1EE74EE00046735D /* A_Framing.png */,
+				98D58EAE1EE74EE00046735D /* A_Section.png */,
+			);
+			name = LoadGeneratorImages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98D58DD61EE74C9D0046735D /* Resibeam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98D58DFE1EE74C9D0046735D /* Build configuration list for PBXNativeTarget "Resibeam" */;
+			buildPhases = (
+				98D58DD31EE74C9D0046735D /* Sources */,
+				98D58DD41EE74C9D0046735D /* Frameworks */,
+				98D58DD51EE74C9D0046735D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Resibeam;
+			productName = Resibeam;
+			productReference = 98D58DD71EE74C9D0046735D /* Resibeam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98D58DE91EE74C9D0046735D /* ResibeamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98D58E011EE74C9D0046735D /* Build configuration list for PBXNativeTarget "ResibeamTests" */;
+			buildPhases = (
+				98D58DE61EE74C9D0046735D /* Sources */,
+				98D58DE71EE74C9D0046735D /* Frameworks */,
+				98D58DE81EE74C9D0046735D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98D58DEC1EE74C9D0046735D /* PBXTargetDependency */,
+			);
+			name = ResibeamTests;
+			productName = ResibeamTests;
+			productReference = 98D58DEA1EE74C9D0046735D /* ResibeamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98D58DF41EE74C9D0046735D /* ResibeamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98D58E041EE74C9D0046735D /* Build configuration list for PBXNativeTarget "ResibeamUITests" */;
+			buildPhases = (
+				98D58DF11EE74C9D0046735D /* Sources */,
+				98D58DF21EE74C9D0046735D /* Frameworks */,
+				98D58DF31EE74C9D0046735D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98D58DF71EE74C9D0046735D /* PBXTargetDependency */,
+			);
+			name = ResibeamUITests;
+			productName = ResibeamUITests;
+			productReference = 98D58DF51EE74C9D0046735D /* ResibeamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98D58DCF1EE74C9D0046735D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Mark Walker";
+				TargetAttributes = {
+					98D58DD61EE74C9D0046735D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6F9Z2AKB5R;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					98D58DE91EE74C9D0046735D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6F9Z2AKB5R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 98D58DD61EE74C9D0046735D;
+					};
+					98D58DF41EE74C9D0046735D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6F9Z2AKB5R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 98D58DD61EE74C9D0046735D;
+					};
+				};
+			};
+			buildConfigurationList = 98D58DD21EE74C9D0046735D /* Build configuration list for PBXProject "Resibeam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98D58DCE1EE74C9D0046735D;
+			productRefGroup = 98D58DD81EE74C9D0046735D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98D58DD61EE74C9D0046735D /* Resibeam */,
+				98D58DE91EE74C9D0046735D /* ResibeamTests */,
+				98D58DF41EE74C9D0046735D /* ResibeamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98D58DD51EE74C9D0046735D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D58E991EE74EBF0046735D /* 40x33 LinearDown.png in Resources */,
+				98D58EB21EE74EE00046735D /* C_OverView.png in Resources */,
+				98D58EB71EE74EE00046735D /* LiveLoadChart.png in Resources */,
+				98D58E9D1EE74EBF0046735D /* glyphicons-191-circle-plus.png in Resources */,
+				98D58E9C1EE74EBF0046735D /* Concentrated1.png in Resources */,
+				98D58EBB1EE74EE00046735D /* A_Section.png in Resources */,
+				98D58DE11EE74C9D0046735D /* Assets.xcassets in Resources */,
+				98D58EB51EE74EE00046735D /* B_Framing.png in Resources */,
+				98D58E981EE74EBF0046735D /* 12x33_concentrated.png in Resources */,
+				98D58EB91EE74EE00046735D /* SnowLoadMapEast.png in Resources */,
+				98D58DE41EE74C9D0046735D /* Main.storyboard in Resources */,
+				98D58EB81EE74EE00046735D /* SnowLoadMap_West.png in Resources */,
+				98D58EB11EE74EE00046735D /* D_FloorJoistMain.png in Resources */,
+				98D58ED51EE755A50046735D /* C_NarrowerAbove.png in Resources */,
+				98D58EB41EE74EE00046735D /* FloorLiveLoadChart.png in Resources */,
+				98D58EB31EE74EE00046735D /* C_AlignedAbove.png in Resources */,
+				98D58ECF1EE74F480046735D /* v0004_DocFull.icns in Resources */,
+				98D58EB01EE74EE00046735D /* E_Section.png in Resources */,
+				98D58EAF1EE74EE00046735D /* E_Main.png in Resources */,
+				98D58E9F1EE74EBF0046735D /* Row_Down.png in Resources */,
+				98D58ED61EE755A50046735D /* C_NothingAbove.png in Resources */,
+				98D58ECE1EE74F480046735D /* v0004_docCentered.icns in Resources */,
+				98D58EBA1EE74EE00046735D /* A_Framing.png in Resources */,
+				98D58E9A1EE74EBF0046735D /* 40x33_LinearUp.png in Resources */,
+				98D58E9B1EE74EBF0046735D /* 40x33_Uniform.png in Resources */,
+				98D58EBD1EE74F270046735D /* HelpBook.paradocs in Resources */,
+				98D58EA01EE74EBF0046735D /* row_Up.png in Resources */,
+				98D58EB61EE74EE00046735D /* B_Section.png in Resources */,
+				98D58EDA1EE7591C0046735D /* v0004_docCentered.icns in Resources */,
+				98D58ED71EE755A50046735D /* C_OffsetAbove.png in Resources */,
+				98D58E9E1EE74EBF0046735D /* glyphicons-192-circle-minus.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D58DE81EE74C9D0046735D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D58DF31EE74C9D0046735D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98D58DD31EE74C9D0046735D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D58DDD1EE74C9D0046735D /* ViewController.swift in Sources */,
+				98D58E671EE74EA30046735D /* MWLoadGraphView.swift in Sources */,
+				98D58E6F1EE74EA30046735D /* MWSteelWBeamDesign.swift in Sources */,
+				98D58DDB1EE74C9D0046735D /* AppDelegate.swift in Sources */,
+				98D58E871EE74EA30046735D /* steelGradeEnum.swift in Sources */,
+				98D58E681EE74EA30046735D /* MWLVLBeamDesign.swift in Sources */,
+				98D58E601EE74EA30046735D /* MWBeamGraphView.swift in Sources */,
+				98D58E4B1EE74EA30046735D /* vc_cdSelector.swift in Sources */,
+				98D58E6A1EE74EA30046735D /* MWLVLLoadedDesignSection.swift in Sources */,
+				98D58E4E1EE74EA30046735D /* vc_LVLBeamDesignPanel.swift in Sources */,
+				98D58E801EE74EA30046735D /* vc_GeneratorConditionSelector.swift in Sources */,
+				98D58E771EE74EA30046735D /* MWWoodDesignValues.swift in Sources */,
+				98D58EC81EE74F480046735D /* WindowController.swift in Sources */,
+				98D58E511EE74EA30046735D /* MWButtonImageTableCellViewPrototype.swift in Sources */,
+				98D58E861EE74EA30046735D /* WoodSpeciesEnum.swift in Sources */,
+				98D58ECC1EE74F480046735D /* MWSaveFileData.swift in Sources */,
+				98D58E7E1EE74EA30046735D /* vc_FSFbSelector.swift in Sources */,
+				98D58E6C1EE74EA30046735D /* MWLVLSectionDesignData.swift in Sources */,
+				98D58E7F1EE74EA30046735D /* vc_FSFvSelector.swift in Sources */,
+				98D58E551EE74EA30046735D /* vc_SplitView_Beam.swift in Sources */,
+				98D58E851EE74EA30046735D /* WoodGradeEnum.swift in Sources */,
+				98D58E7B1EE74EA30046735D /* MWWoodSectionDesignData.swift in Sources */,
+				98D58E8B1EE74EA30046735D /* vc_RoofLiveLoadChart.swift in Sources */,
+				98D58E781EE74EA30046735D /* MWWoodFactors.swift in Sources */,
+				98D58E541EE74EA30046735D /* tvc_BeamDesign.swift in Sources */,
+				98D58DDF1EE74C9D0046735D /* Document.swift in Sources */,
+				98D58E811EE74EA30046735D /* vc_LoadGen1.swift in Sources */,
+				98D58E6D1EE74EA30046735D /* MWSteelFactors.swift in Sources */,
+				98D58E5E1EE74EA30046735D /* vc_Calculations.swift in Sources */,
+				98D58E591EE74EA30046735D /* vc_LoadGen5.swift in Sources */,
+				98D58ECD1EE74F480046735D /* MWTextFormatHelper.swift in Sources */,
+				98D58E721EE74EA30046735D /* MWSteelWSectionDesignData.swift in Sources */,
+				98D58E791EE74EA30046735D /* MWWoodLoadedDesignSection.swift in Sources */,
+				98D58E8D1EE74EA30046735D /* LVLGradeEnum.swift in Sources */,
+				98D58E7C1EE74EA30046735D /* vc_BeamGraphs.swift in Sources */,
+				98D58ED11EE750B10046735D /* MWCollectionReorder.swift in Sources */,
+				98D58E691EE74EA30046735D /* MWLVLDesignValues.swift in Sources */,
+				98D58E701EE74EA30046735D /* MWSteelWDesignValues.swift in Sources */,
+				98D58EC91EE74F480046735D /* MWCalulationTextView.swift in Sources */,
+				98D58E661EE74EA30046735D /* MWLoadData.swift in Sources */,
+				98D58ECB1EE74F480046735D /* MWNSViewForTBStatus.swift in Sources */,
+				98D58E761EE74EA30046735D /* MWWoodCLCalculator.swift in Sources */,
+				98D58E821EE74EA30046735D /* vc_LoadGen2.swift in Sources */,
+				98D58E8C1EE74EA30046735D /* LVLManufacturerEnum.swift in Sources */,
+				98D58E521EE74EA30046735D /* vc_BeamData.swift in Sources */,
+				98D58E621EE74EA30046735D /* CustomCell_GereratorConditionsCell.swift in Sources */,
+				98D58E4F1EE74EA30046735D /* MWLoadComboResult.swift in Sources */,
+				98D58E4C1EE74EA30046735D /* vc_LoadGen3.swift in Sources */,
+				98D58E711EE74EA30046735D /* MWSteelWFSCalculator.swift in Sources */,
+				98D58E641EE74EA30046735D /* LintelConditionEnum.swift in Sources */,
+				98D58E881EE74EA30046735D /* vc_SnowMap.swift in Sources */,
+				98D58E891EE74EA30046735D /* vc_RoofDLInfo.swift in Sources */,
+				98D58E741EE74EA30046735D /* MWTextField_NumberInput.swift in Sources */,
+				98D58E6B1EE74EA30046735D /* MWLVLMaterialLimits.swift in Sources */,
+				98D58E651EE74EA30046735D /* MWBeamGeometry.swift in Sources */,
+				98D58EC71EE74F480046735D /* wc_Main.swift in Sources */,
+				98D58E571EE74EA30046735D /* MWStructuralEquations.swift in Sources */,
+				98D58E841EE74EA30046735D /* vc_RadioSelectLoadType.swift in Sources */,
+				98D58E611EE74EA30046735D /* vc_BeamResultsTables.swift in Sources */,
+				98D58E7D1EE74EA30046735D /* vc_clSelector.swift in Sources */,
+				98D58E6E1EE74EA30046735D /* MWSteelMaterialLimits.swift in Sources */,
+				98D58E5B1EE74EA30046735D /* MWPersistentBeamInterfaceData.swift in Sources */,
+				98D58E7A1EE74EA30046735D /* MWWoodMaterialLimits.swift in Sources */,
+				98D58E731EE74EA30046735D /* MWStructuralGraphData.swift in Sources */,
+				98D58E751EE74EA30046735D /* MWWoodBeamDesign.swift in Sources */,
+				98D58E4D1EE74EA30046735D /* vc_WoodBeamDesignPanel.swift in Sources */,
+				98D58E531EE74EA30046735D /* tvc_Main.swift in Sources */,
+				98D58E501EE74EA30046735D /* vc_SteelWBeamDesignPanel.swift in Sources */,
+				98D58E831EE74EA30046735D /* vc_LoadGen4.swift in Sources */,
+				98D58E5F1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift in Sources */,
+				98D58E5C1EE74EA30046735D /* MWLVLDesignData.swift in Sources */,
+				98D58E8A1EE74EA30046735D /* vc_FloorLLInfo.swift in Sources */,
+				98D58E5D1EE74EA30046735D /* vc_WBeamDesignPanel.swift in Sources */,
+				98D58ECA1EE74F480046735D /* MWCustomTableRowView.swift in Sources */,
+				98D58E5A1EE74EA30046735D /* MWBeamAnalysis.swift in Sources */,
+				98D58E631EE74EA30046735D /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D58DE61EE74C9D0046735D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D58DEF1EE74C9D0046735D /* ResibeamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D58DF11EE74C9D0046735D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D58DFA1EE74C9D0046735D /* ResibeamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98D58DEC1EE74C9D0046735D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98D58DD61EE74C9D0046735D /* Resibeam */;
+			targetProxy = 98D58DEB1EE74C9D0046735D /* PBXContainerItemProxy */;
+		};
+		98D58DF71EE74C9D0046735D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98D58DD61EE74C9D0046735D /* Resibeam */;
+			targetProxy = 98D58DF61EE74C9D0046735D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98D58DE21EE74C9D0046735D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98D58DE31EE74C9D0046735D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98D58DFC1EE74C9D0046735D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98D58DFD1EE74C9D0046735D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		98D58DFF1EE74C9D0046735D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Resibeam/Resibeam.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6F9Z2AKB5R;
+				INFOPLIST_FILE = Resibeam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.walker.Resibeam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		98D58E001EE74C9D0046735D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Resibeam/Resibeam.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6F9Z2AKB5R;
+				INFOPLIST_FILE = Resibeam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.walker.Resibeam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		98D58E021EE74C9D0046735D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6F9Z2AKB5R;
+				INFOPLIST_FILE = ResibeamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.walker.ResibeamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Resibeam.app/Contents/MacOS/Resibeam";
+			};
+			name = Debug;
+		};
+		98D58E031EE74C9D0046735D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6F9Z2AKB5R;
+				INFOPLIST_FILE = ResibeamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.walker.ResibeamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Resibeam.app/Contents/MacOS/Resibeam";
+			};
+			name = Release;
+		};
+		98D58E051EE74C9D0046735D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6F9Z2AKB5R;
+				INFOPLIST_FILE = ResibeamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.walker.ResibeamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Resibeam;
+			};
+			name = Debug;
+		};
+		98D58E061EE74C9D0046735D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6F9Z2AKB5R;
+				INFOPLIST_FILE = ResibeamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.walker.ResibeamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Resibeam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98D58DD21EE74C9D0046735D /* Build configuration list for PBXProject "Resibeam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D58DFC1EE74C9D0046735D /* Debug */,
+				98D58DFD1EE74C9D0046735D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98D58DFE1EE74C9D0046735D /* Build configuration list for PBXNativeTarget "Resibeam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D58DFF1EE74C9D0046735D /* Debug */,
+				98D58E001EE74C9D0046735D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98D58E011EE74C9D0046735D /* Build configuration list for PBXNativeTarget "ResibeamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D58E021EE74C9D0046735D /* Debug */,
+				98D58E031EE74C9D0046735D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98D58E041EE74C9D0046735D /* Build configuration list for PBXNativeTarget "ResibeamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D58E051EE74C9D0046735D /* Debug */,
+				98D58E061EE74C9D0046735D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98D58DCF1EE74C9D0046735D /* Project object */;
+}
