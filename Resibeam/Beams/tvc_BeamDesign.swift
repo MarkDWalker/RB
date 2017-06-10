@@ -22,7 +22,7 @@ class tvc_BeamDesign: NSTabViewController {
         
         theTabView.font = tabFont!
         
-        self.tabViewItems.removeLast(2)
+        self.tabViewItems.removeLast(1)
 
         
     }
