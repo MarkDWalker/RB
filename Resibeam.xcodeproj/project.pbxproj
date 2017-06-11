@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		981BB50A1EECB53C0018BACB /* vc_FlitchBeamDesignPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BB5091EECB53C0018BACB /* vc_FlitchBeamDesignPanel.swift */; };
+		981BB50C1EECB8660018BACB /* tvc_flitchDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BB50B1EECB8660018BACB /* tvc_flitchDesign.swift */; };
+		981BB50E1EECC29E0018BACB /* MWFlitchBeamDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BB50D1EECC29E0018BACB /* MWFlitchBeamDesign.swift */; };
 		98D58DDB1EE74C9D0046735D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58DDA1EE74C9D0046735D /* AppDelegate.swift */; };
 		98D58DDD1EE74C9D0046735D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58DDC1EE74C9D0046735D /* ViewController.swift */; };
 		98D58DDF1EE74C9D0046735D /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58DDE1EE74C9D0046735D /* Document.swift */; };
@@ -30,7 +33,7 @@
 		98D58E5A1EE74EA30046735D /* MWBeamAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E171EE74EA30046735D /* MWBeamAnalysis.swift */; };
 		98D58E5B1EE74EA30046735D /* MWPersistentBeamInterfaceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E181EE74EA30046735D /* MWPersistentBeamInterfaceData.swift */; };
 		98D58E5C1EE74EA30046735D /* MWLVLDesignData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E191EE74EA30046735D /* MWLVLDesignData.swift */; };
-		98D58E5D1EE74EA30046735D /* vc_WBeamDesignPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1A1EE74EA30046735D /* vc_WBeamDesignPanel.swift */; };
+		98D58E5D1EE74EA30046735D /* xxxvc_WBeamDesignPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1A1EE74EA30046735D /* xxxvc_WBeamDesignPanel.swift */; };
 		98D58E5E1EE74EA30046735D /* vc_Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1B1EE74EA30046735D /* vc_Calculations.swift */; };
 		98D58E5F1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1C1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift */; };
 		98D58E601EE74EA30046735D /* MWBeamGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1D1EE74EA30046735D /* MWBeamGraphView.swift */; };
@@ -136,6 +139,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		981BB5091EECB53C0018BACB /* vc_FlitchBeamDesignPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_FlitchBeamDesignPanel.swift; path = Resibeam/Beams/vc_FlitchBeamDesignPanel.swift; sourceTree = "<group>"; };
+		981BB50B1EECB8660018BACB /* tvc_flitchDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tvc_flitchDesign.swift; path = Beams/tvc_flitchDesign.swift; sourceTree = "<group>"; };
+		981BB50D1EECC29E0018BACB /* MWFlitchBeamDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWFlitchBeamDesign.swift; path = Beams/MWFlitchBeamDesign.swift; sourceTree = "<group>"; };
 		98D58DD71EE74C9D0046735D /* Resibeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resibeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D58DDA1EE74C9D0046735D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98D58DDC1EE74C9D0046735D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,7 +156,7 @@
 		98D58DF91EE74C9D0046735D /* ResibeamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResibeamUITests.swift; sourceTree = "<group>"; };
 		98D58DFB1EE74C9D0046735D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98D58E081EE74EA30046735D /* vc_cdSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_cdSelector.swift; path = Beams/vc_cdSelector.swift; sourceTree = "<group>"; };
-		98D58E091EE74EA30046735D /* vc_LoadGen3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LoadGen3.swift; path = Beams/vc_LoadGen3.swift; sourceTree = "<group>"; };
+		98D58E091EE74EA30046735D /* vc_LoadGen3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LoadGen3.swift; path = ../Resibeam/Beams/vc_LoadGen3.swift; sourceTree = "<group>"; };
 		98D58E0A1EE74EA30046735D /* vc_WoodBeamDesignPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_WoodBeamDesignPanel.swift; path = Beams/vc_WoodBeamDesignPanel.swift; sourceTree = "<group>"; };
 		98D58E0B1EE74EA30046735D /* vc_LVLBeamDesignPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LVLBeamDesignPanel.swift; path = Beams/vc_LVLBeamDesignPanel.swift; sourceTree = "<group>"; };
 		98D58E0C1EE74EA30046735D /* MWLoadComboResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWLoadComboResult.swift; path = Beams/MWLoadComboResult.swift; sourceTree = "<group>"; };
@@ -161,16 +167,16 @@
 		98D58E111EE74EA30046735D /* tvc_BeamDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tvc_BeamDesign.swift; path = Beams/tvc_BeamDesign.swift; sourceTree = "<group>"; };
 		98D58E121EE74EA30046735D /* vc_SplitView_Beam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_SplitView_Beam.swift; path = Beams/vc_SplitView_Beam.swift; sourceTree = "<group>"; };
 		98D58E141EE74EA30046735D /* MWStructuralEquations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWStructuralEquations.swift; path = Beams/MWStructuralEquations.swift; sourceTree = "<group>"; };
-		98D58E161EE74EA30046735D /* vc_LoadGen5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LoadGen5.swift; path = Beams/vc_LoadGen5.swift; sourceTree = "<group>"; };
+		98D58E161EE74EA30046735D /* vc_LoadGen5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LoadGen5.swift; path = ../Resibeam/Beams/vc_LoadGen5.swift; sourceTree = "<group>"; };
 		98D58E171EE74EA30046735D /* MWBeamAnalysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWBeamAnalysis.swift; path = Beams/MWBeamAnalysis.swift; sourceTree = "<group>"; };
 		98D58E181EE74EA30046735D /* MWPersistentBeamInterfaceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWPersistentBeamInterfaceData.swift; path = Beams/MWPersistentBeamInterfaceData.swift; sourceTree = "<group>"; };
 		98D58E191EE74EA30046735D /* MWLVLDesignData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWLVLDesignData.swift; path = Beams/MWLVLDesignData.swift; sourceTree = "<group>"; };
-		98D58E1A1EE74EA30046735D /* vc_WBeamDesignPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_WBeamDesignPanel.swift; path = Beams/vc_WBeamDesignPanel.swift; sourceTree = "<group>"; };
+		98D58E1A1EE74EA30046735D /* xxxvc_WBeamDesignPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = xxxvc_WBeamDesignPanel.swift; path = Beams/xxxvc_WBeamDesignPanel.swift; sourceTree = "<group>"; };
 		98D58E1B1EE74EA30046735D /* vc_Calculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_Calculations.swift; path = Beams/vc_Calculations.swift; sourceTree = "<group>"; };
 		98D58E1C1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWSteelWLoadedDesignSection.swift; path = Beams/MWSteelWLoadedDesignSection.swift; sourceTree = "<group>"; };
 		98D58E1D1EE74EA30046735D /* MWBeamGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWBeamGraphView.swift; path = Beams/MWBeamGraphView.swift; sourceTree = "<group>"; };
 		98D58E1E1EE74EA30046735D /* vc_BeamResultsTables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_BeamResultsTables.swift; path = Beams/vc_BeamResultsTables.swift; sourceTree = "<group>"; };
-		98D58E1F1EE74EA30046735D /* CustomCell_GereratorConditionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCell_GereratorConditionsCell.swift; path = Beams/CustomCell_GereratorConditionsCell.swift; sourceTree = "<group>"; };
+		98D58E1F1EE74EA30046735D /* CustomCell_GereratorConditionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCell_GereratorConditionsCell.swift; path = ../Resibeam/Beams/CustomCell_GereratorConditionsCell.swift; sourceTree = "<group>"; };
 		98D58E201EE74EA30046735D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Beams/Extensions.swift; sourceTree = "<group>"; };
 		98D58E211EE74EA30046735D /* LintelConditionEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LintelConditionEnum.swift; path = Beams/LintelConditionEnum.swift; sourceTree = "<group>"; };
 		98D58E221EE74EA30046735D /* MWBeamGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWBeamGeometry.swift; path = Beams/MWBeamGeometry.swift; sourceTree = "<group>"; };
@@ -200,18 +206,18 @@
 		98D58E3A1EE74EA30046735D /* vc_clSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_clSelector.swift; path = Beams/vc_clSelector.swift; sourceTree = "<group>"; };
 		98D58E3B1EE74EA30046735D /* vc_FSFbSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_FSFbSelector.swift; path = Beams/vc_FSFbSelector.swift; sourceTree = "<group>"; };
 		98D58E3C1EE74EA30046735D /* vc_FSFvSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_FSFvSelector.swift; path = Beams/vc_FSFvSelector.swift; sourceTree = "<group>"; };
-		98D58E3D1EE74EA30046735D /* vc_GeneratorConditionSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_GeneratorConditionSelector.swift; path = Beams/vc_GeneratorConditionSelector.swift; sourceTree = "<group>"; };
-		98D58E3E1EE74EA30046735D /* vc_LoadGen1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LoadGen1.swift; path = Beams/vc_LoadGen1.swift; sourceTree = "<group>"; };
-		98D58E3F1EE74EA30046735D /* vc_LoadGen2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LoadGen2.swift; path = Beams/vc_LoadGen2.swift; sourceTree = "<group>"; };
-		98D58E401EE74EA30046735D /* vc_LoadGen4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LoadGen4.swift; path = Beams/vc_LoadGen4.swift; sourceTree = "<group>"; };
+		98D58E3D1EE74EA30046735D /* vc_GeneratorConditionSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_GeneratorConditionSelector.swift; path = ../Resibeam/Beams/vc_GeneratorConditionSelector.swift; sourceTree = "<group>"; };
+		98D58E3E1EE74EA30046735D /* vc_LoadGen1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LoadGen1.swift; path = ../Resibeam/Beams/vc_LoadGen1.swift; sourceTree = "<group>"; };
+		98D58E3F1EE74EA30046735D /* vc_LoadGen2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LoadGen2.swift; path = ../Resibeam/Beams/vc_LoadGen2.swift; sourceTree = "<group>"; };
+		98D58E401EE74EA30046735D /* vc_LoadGen4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_LoadGen4.swift; path = ../Resibeam/Beams/vc_LoadGen4.swift; sourceTree = "<group>"; };
 		98D58E411EE74EA30046735D /* vc_RadioSelectLoadType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_RadioSelectLoadType.swift; path = Beams/vc_RadioSelectLoadType.swift; sourceTree = "<group>"; };
 		98D58E421EE74EA30046735D /* WoodGradeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WoodGradeEnum.swift; path = Beams/WoodGradeEnum.swift; sourceTree = "<group>"; };
 		98D58E431EE74EA30046735D /* WoodSpeciesEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WoodSpeciesEnum.swift; path = Beams/WoodSpeciesEnum.swift; sourceTree = "<group>"; };
 		98D58E441EE74EA30046735D /* steelGradeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = steelGradeEnum.swift; path = Beams/steelGradeEnum.swift; sourceTree = "<group>"; };
-		98D58E451EE74EA30046735D /* vc_SnowMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_SnowMap.swift; path = Beams/vc_SnowMap.swift; sourceTree = "<group>"; };
-		98D58E461EE74EA30046735D /* vc_RoofDLInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_RoofDLInfo.swift; path = Beams/vc_RoofDLInfo.swift; sourceTree = "<group>"; };
-		98D58E471EE74EA30046735D /* vc_FloorLLInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_FloorLLInfo.swift; path = Beams/vc_FloorLLInfo.swift; sourceTree = "<group>"; };
-		98D58E481EE74EA30046735D /* vc_RoofLiveLoadChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_RoofLiveLoadChart.swift; path = Beams/vc_RoofLiveLoadChart.swift; sourceTree = "<group>"; };
+		98D58E451EE74EA30046735D /* vc_SnowMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_SnowMap.swift; path = ../Resibeam/Beams/vc_SnowMap.swift; sourceTree = "<group>"; };
+		98D58E461EE74EA30046735D /* vc_RoofDLInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_RoofDLInfo.swift; path = ../Resibeam/Beams/vc_RoofDLInfo.swift; sourceTree = "<group>"; };
+		98D58E471EE74EA30046735D /* vc_FloorLLInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_FloorLLInfo.swift; path = ../Resibeam/Beams/vc_FloorLLInfo.swift; sourceTree = "<group>"; };
+		98D58E481EE74EA30046735D /* vc_RoofLiveLoadChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_RoofLiveLoadChart.swift; path = ../Resibeam/Beams/vc_RoofLiveLoadChart.swift; sourceTree = "<group>"; };
 		98D58E491EE74EA30046735D /* LVLManufacturerEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LVLManufacturerEnum.swift; path = Beams/LVLManufacturerEnum.swift; sourceTree = "<group>"; };
 		98D58E4A1EE74EA30046735D /* LVLGradeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LVLGradeEnum.swift; path = Beams/LVLGradeEnum.swift; sourceTree = "<group>"; };
 		98D58E8F1EE74EBF0046735D /* 12x33_concentrated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 12x33_concentrated.png; path = "Beams/Beam Images/12x33_concentrated.png"; sourceTree = "<group>"; };
@@ -279,10 +285,124 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		988414211EED5E2300AB7D00 /* Beam Design Panels */ = {
+			isa = PBXGroup;
+			children = (
+				988414221EED5E4000AB7D00 /* Wood Beam Design */,
+				988414231EED5E7F00AB7D00 /* LVL Beam Design */,
+				988414241EED5E9500AB7D00 /* SteelW Beam Design */,
+				988414251EED5EAC00AB7D00 /* Flitch Beam Design */,
+				988414261EED5EC000AB7D00 /* Flitch Bolt Design */,
+				98D58E111EE74EA30046735D /* tvc_BeamDesign.swift */,
+			);
+			name = "Beam Design Panels";
+			sourceTree = "<group>";
+		};
+		988414221EED5E4000AB7D00 /* Wood Beam Design */ = {
+			isa = PBXGroup;
+			children = (
+				98D58E0A1EE74EA30046735D /* vc_WoodBeamDesignPanel.swift */,
+				98D58E321EE74EA30046735D /* MWWoodBeamDesign.swift */,
+				98D58E341EE74EA30046735D /* MWWoodDesignValues.swift */,
+				98D58E381EE74EA30046735D /* MWWoodSectionDesignData.swift */,
+				98D58E361EE74EA30046735D /* MWWoodLoadedDesignSection.swift */,
+				98D58E331EE74EA30046735D /* MWWoodCLCalculator.swift */,
+				98D58E351EE74EA30046735D /* MWWoodFactors.swift */,
+				98D58E371EE74EA30046735D /* MWWoodMaterialLimits.swift */,
+				98D58E421EE74EA30046735D /* WoodGradeEnum.swift */,
+				98D58E431EE74EA30046735D /* WoodSpeciesEnum.swift */,
+				98D58E081EE74EA30046735D /* vc_cdSelector.swift */,
+				98D58E3A1EE74EA30046735D /* vc_clSelector.swift */,
+			);
+			name = "Wood Beam Design";
+			sourceTree = "<group>";
+		};
+		988414231EED5E7F00AB7D00 /* LVL Beam Design */ = {
+			isa = PBXGroup;
+			children = (
+				98D58E0B1EE74EA30046735D /* vc_LVLBeamDesignPanel.swift */,
+				98D58E191EE74EA30046735D /* MWLVLDesignData.swift */,
+				98D58E261EE74EA30046735D /* MWLVLDesignValues.swift */,
+				98D58E271EE74EA30046735D /* MWLVLLoadedDesignSection.swift */,
+				98D58E281EE74EA30046735D /* MWLVLMaterialLimits.swift */,
+				98D58E291EE74EA30046735D /* MWLVLSectionDesignData.swift */,
+				98D58E251EE74EA30046735D /* MWLVLBeamDesign.swift */,
+				98D58E491EE74EA30046735D /* LVLManufacturerEnum.swift */,
+				98D58E4A1EE74EA30046735D /* LVLGradeEnum.swift */,
+			);
+			name = "LVL Beam Design";
+			sourceTree = "<group>";
+		};
+		988414241EED5E9500AB7D00 /* SteelW Beam Design */ = {
+			isa = PBXGroup;
+			children = (
+				98D58E0D1EE74EA30046735D /* vc_SteelWBeamDesignPanel.swift */,
+				98D58E1C1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift */,
+				98D58E2A1EE74EA30046735D /* MWSteelFactors.swift */,
+				98D58E2B1EE74EA30046735D /* MWSteelMaterialLimits.swift */,
+				98D58E2C1EE74EA30046735D /* MWSteelWBeamDesign.swift */,
+				98D58E2D1EE74EA30046735D /* MWSteelWDesignValues.swift */,
+				98D58E2E1EE74EA30046735D /* MWSteelWFSCalculator.swift */,
+				98D58E2F1EE74EA30046735D /* MWSteelWSectionDesignData.swift */,
+				98D58E3B1EE74EA30046735D /* vc_FSFbSelector.swift */,
+				98D58E3C1EE74EA30046735D /* vc_FSFvSelector.swift */,
+				98D58E441EE74EA30046735D /* steelGradeEnum.swift */,
+				98D58E1A1EE74EA30046735D /* xxxvc_WBeamDesignPanel.swift */,
+			);
+			name = "SteelW Beam Design";
+			sourceTree = "<group>";
+		};
+		988414251EED5EAC00AB7D00 /* Flitch Beam Design */ = {
+			isa = PBXGroup;
+			children = (
+				981BB50B1EECB8660018BACB /* tvc_flitchDesign.swift */,
+				981BB50D1EECC29E0018BACB /* MWFlitchBeamDesign.swift */,
+			);
+			name = "Flitch Beam Design";
+			sourceTree = "<group>";
+		};
+		988414261EED5EC000AB7D00 /* Flitch Bolt Design */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Flitch Bolt Design";
+			sourceTree = "<group>";
+		};
+		988414271EED5EFE00AB7D00 /* Load Gen */ = {
+			isa = PBXGroup;
+			children = (
+				98D58E1F1EE74EA30046735D /* CustomCell_GereratorConditionsCell.swift */,
+				98D58E091EE74EA30046735D /* vc_LoadGen3.swift */,
+				98D58E161EE74EA30046735D /* vc_LoadGen5.swift */,
+				98D58E451EE74EA30046735D /* vc_SnowMap.swift */,
+				98D58E461EE74EA30046735D /* vc_RoofDLInfo.swift */,
+				98D58E471EE74EA30046735D /* vc_FloorLLInfo.swift */,
+				98D58E481EE74EA30046735D /* vc_RoofLiveLoadChart.swift */,
+				98D58E3E1EE74EA30046735D /* vc_LoadGen1.swift */,
+				98D58E3F1EE74EA30046735D /* vc_LoadGen2.swift */,
+				98D58E401EE74EA30046735D /* vc_LoadGen4.swift */,
+				98D58E3D1EE74EA30046735D /* vc_GeneratorConditionSelector.swift */,
+			);
+			name = "Load Gen";
+			path = ResibeamTests;
+			sourceTree = "<group>";
+		};
+		988414281EED611000AB7D00 /* DocImages */ = {
+			isa = PBXGroup;
+			children = (
+				98D58EC51EE74F480046735D /* v0004_docCentered.icns */,
+				98D58EC61EE74F480046735D /* v0004_DocFull.icns */,
+				98D58ED91EE7591C0046735D /* v0004_docCentered.icns */,
+			);
+			name = DocImages;
+			sourceTree = "<group>";
+		};
 		98D58DCE1EE74C9D0046735D = {
 			isa = PBXGroup;
 			children = (
+				981BB5091EECB53C0018BACB /* vc_FlitchBeamDesignPanel.swift */,
 				98D58DD91EE74C9D0046735D /* Resibeam */,
+				988414271EED5EFE00AB7D00 /* Load Gen */,
 				98D58DED1EE74C9D0046735D /* ResibeamTests */,
 				98D58DF81EE74C9D0046735D /* ResibeamUITests */,
 				98D58DD81EE74C9D0046735D /* Products */,
@@ -303,8 +423,11 @@
 			isa = PBXGroup;
 			children = (
 				98D58ED81EE7588F0046735D /* Resibeam.entitlements */,
-				98D58ED01EE750B10046735D /* MWCollectionReorder.swift */,
 				98D58DE21EE74C9D0046735D /* Main.storyboard */,
+				98D58DDA1EE74C9D0046735D /* AppDelegate.swift */,
+				98D58DDC1EE74C9D0046735D /* ViewController.swift */,
+				98D58DDE1EE74C9D0046735D /* Document.swift */,
+				98D58ED01EE750B10046735D /* MWCollectionReorder.swift */,
 				98D58EBE1EE74F480046735D /* wc_Main.swift */,
 				98D58EBF1EE74F480046735D /* WindowController.swift */,
 				98D58EC01EE74F480046735D /* MWCalulationTextView.swift */,
@@ -312,17 +435,15 @@
 				98D58EC21EE74F480046735D /* MWNSViewForTBStatus.swift */,
 				98D58EC31EE74F480046735D /* MWSaveFileData.swift */,
 				98D58EC41EE74F480046735D /* MWTextFormatHelper.swift */,
-				98D58EC51EE74F480046735D /* v0004_docCentered.icns */,
-				98D58EC61EE74F480046735D /* v0004_DocFull.icns */,
+				98D58E201EE74EA30046735D /* Extensions.swift */,
+				98D58E0E1EE74EA30046735D /* MWButtonImageTableCellViewPrototype.swift */,
+				98D58E311EE74EA30046735D /* MWTextField_NumberInput.swift */,
 				98D58EBC1EE74F270046735D /* HelpBook.paradocs */,
+				988414281EED611000AB7D00 /* DocImages */,
 				98D58EA11EE74EC50046735D /* LoadGeneratorImages */,
 				98D58E8E1EE74EAA0046735D /* Beam Images */,
 				98D58E071EE74E8A0046735D /* Beams */,
-				98D58DDA1EE74C9D0046735D /* AppDelegate.swift */,
-				98D58DDC1EE74C9D0046735D /* ViewController.swift */,
-				98D58DDE1EE74C9D0046735D /* Document.swift */,
 				98D58DE01EE74C9D0046735D /* Assets.xcassets */,
-				98D58ED91EE7591C0046735D /* v0004_docCentered.icns */,
 				98D58DE51EE74C9D0046735D /* Info.plist */,
 			);
 			path = Resibeam;
@@ -349,71 +470,24 @@
 		98D58E071EE74E8A0046735D /* Beams */ = {
 			isa = PBXGroup;
 			children = (
-				98D58E081EE74EA30046735D /* vc_cdSelector.swift */,
-				98D58E091EE74EA30046735D /* vc_LoadGen3.swift */,
-				98D58E0A1EE74EA30046735D /* vc_WoodBeamDesignPanel.swift */,
-				98D58E0B1EE74EA30046735D /* vc_LVLBeamDesignPanel.swift */,
-				98D58E0C1EE74EA30046735D /* MWLoadComboResult.swift */,
-				98D58E0D1EE74EA30046735D /* vc_SteelWBeamDesignPanel.swift */,
-				98D58E0E1EE74EA30046735D /* MWButtonImageTableCellViewPrototype.swift */,
-				98D58E0F1EE74EA30046735D /* vc_BeamData.swift */,
 				98D58E101EE74EA30046735D /* tvc_Main.swift */,
-				98D58E111EE74EA30046735D /* tvc_BeamDesign.swift */,
 				98D58E121EE74EA30046735D /* vc_SplitView_Beam.swift */,
+				98D58E0F1EE74EA30046735D /* vc_BeamData.swift */,
+				98D58E391EE74EA30046735D /* vc_BeamGraphs.swift */,
+				98D58E1D1EE74EA30046735D /* MWBeamGraphView.swift */,
 				98D58E141EE74EA30046735D /* MWStructuralEquations.swift */,
-				98D58E161EE74EA30046735D /* vc_LoadGen5.swift */,
 				98D58E171EE74EA30046735D /* MWBeamAnalysis.swift */,
 				98D58E181EE74EA30046735D /* MWPersistentBeamInterfaceData.swift */,
-				98D58E191EE74EA30046735D /* MWLVLDesignData.swift */,
-				98D58E1A1EE74EA30046735D /* vc_WBeamDesignPanel.swift */,
 				98D58E1B1EE74EA30046735D /* vc_Calculations.swift */,
-				98D58E1C1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift */,
-				98D58E1D1EE74EA30046735D /* MWBeamGraphView.swift */,
 				98D58E1E1EE74EA30046735D /* vc_BeamResultsTables.swift */,
-				98D58E1F1EE74EA30046735D /* CustomCell_GereratorConditionsCell.swift */,
-				98D58E201EE74EA30046735D /* Extensions.swift */,
-				98D58E211EE74EA30046735D /* LintelConditionEnum.swift */,
 				98D58E221EE74EA30046735D /* MWBeamGeometry.swift */,
+				98D58E0C1EE74EA30046735D /* MWLoadComboResult.swift */,
 				98D58E231EE74EA30046735D /* MWLoadData.swift */,
 				98D58E241EE74EA30046735D /* MWLoadGraphView.swift */,
-				98D58E251EE74EA30046735D /* MWLVLBeamDesign.swift */,
-				98D58E261EE74EA30046735D /* MWLVLDesignValues.swift */,
-				98D58E271EE74EA30046735D /* MWLVLLoadedDesignSection.swift */,
-				98D58E281EE74EA30046735D /* MWLVLMaterialLimits.swift */,
-				98D58E291EE74EA30046735D /* MWLVLSectionDesignData.swift */,
-				98D58E2A1EE74EA30046735D /* MWSteelFactors.swift */,
-				98D58E2B1EE74EA30046735D /* MWSteelMaterialLimits.swift */,
-				98D58E2C1EE74EA30046735D /* MWSteelWBeamDesign.swift */,
-				98D58E2D1EE74EA30046735D /* MWSteelWDesignValues.swift */,
-				98D58E2E1EE74EA30046735D /* MWSteelWFSCalculator.swift */,
-				98D58E2F1EE74EA30046735D /* MWSteelWSectionDesignData.swift */,
+				98D58E211EE74EA30046735D /* LintelConditionEnum.swift */,
 				98D58E301EE74EA30046735D /* MWStructuralGraphData.swift */,
-				98D58E311EE74EA30046735D /* MWTextField_NumberInput.swift */,
-				98D58E321EE74EA30046735D /* MWWoodBeamDesign.swift */,
-				98D58E331EE74EA30046735D /* MWWoodCLCalculator.swift */,
-				98D58E341EE74EA30046735D /* MWWoodDesignValues.swift */,
-				98D58E351EE74EA30046735D /* MWWoodFactors.swift */,
-				98D58E361EE74EA30046735D /* MWWoodLoadedDesignSection.swift */,
-				98D58E371EE74EA30046735D /* MWWoodMaterialLimits.swift */,
-				98D58E381EE74EA30046735D /* MWWoodSectionDesignData.swift */,
-				98D58E391EE74EA30046735D /* vc_BeamGraphs.swift */,
-				98D58E3A1EE74EA30046735D /* vc_clSelector.swift */,
-				98D58E3B1EE74EA30046735D /* vc_FSFbSelector.swift */,
-				98D58E3C1EE74EA30046735D /* vc_FSFvSelector.swift */,
-				98D58E3D1EE74EA30046735D /* vc_GeneratorConditionSelector.swift */,
-				98D58E3E1EE74EA30046735D /* vc_LoadGen1.swift */,
-				98D58E3F1EE74EA30046735D /* vc_LoadGen2.swift */,
-				98D58E401EE74EA30046735D /* vc_LoadGen4.swift */,
 				98D58E411EE74EA30046735D /* vc_RadioSelectLoadType.swift */,
-				98D58E421EE74EA30046735D /* WoodGradeEnum.swift */,
-				98D58E431EE74EA30046735D /* WoodSpeciesEnum.swift */,
-				98D58E441EE74EA30046735D /* steelGradeEnum.swift */,
-				98D58E451EE74EA30046735D /* vc_SnowMap.swift */,
-				98D58E461EE74EA30046735D /* vc_RoofDLInfo.swift */,
-				98D58E471EE74EA30046735D /* vc_FloorLLInfo.swift */,
-				98D58E481EE74EA30046735D /* vc_RoofLiveLoadChart.swift */,
-				98D58E491EE74EA30046735D /* LVLManufacturerEnum.swift */,
-				98D58E4A1EE74EA30046735D /* LVLGradeEnum.swift */,
+				988414211EED5E2300AB7D00 /* Beam Design Panels */,
 			);
 			name = Beams;
 			sourceTree = "<group>";
@@ -666,6 +740,7 @@
 				98D58E691EE74EA30046735D /* MWLVLDesignValues.swift in Sources */,
 				98D58E701EE74EA30046735D /* MWSteelWDesignValues.swift in Sources */,
 				98D58EC91EE74F480046735D /* MWCalulationTextView.swift in Sources */,
+				981BB50E1EECC29E0018BACB /* MWFlitchBeamDesign.swift in Sources */,
 				98D58E661EE74EA30046735D /* MWLoadData.swift in Sources */,
 				98D58ECB1EE74F480046735D /* MWNSViewForTBStatus.swift in Sources */,
 				98D58E761EE74EA30046735D /* MWWoodCLCalculator.swift in Sources */,
@@ -678,6 +753,7 @@
 				98D58E711EE74EA30046735D /* MWSteelWFSCalculator.swift in Sources */,
 				98D58E641EE74EA30046735D /* LintelConditionEnum.swift in Sources */,
 				98D58E881EE74EA30046735D /* vc_SnowMap.swift in Sources */,
+				981BB50C1EECB8660018BACB /* tvc_flitchDesign.swift in Sources */,
 				98D58E891EE74EA30046735D /* vc_RoofDLInfo.swift in Sources */,
 				98D58E741EE74EA30046735D /* MWTextField_NumberInput.swift in Sources */,
 				98D58E6B1EE74EA30046735D /* MWLVLMaterialLimits.swift in Sources */,
@@ -685,6 +761,7 @@
 				98D58EC71EE74F480046735D /* wc_Main.swift in Sources */,
 				98D58E571EE74EA30046735D /* MWStructuralEquations.swift in Sources */,
 				98D58E841EE74EA30046735D /* vc_RadioSelectLoadType.swift in Sources */,
+				981BB50A1EECB53C0018BACB /* vc_FlitchBeamDesignPanel.swift in Sources */,
 				98D58E611EE74EA30046735D /* vc_BeamResultsTables.swift in Sources */,
 				98D58E7D1EE74EA30046735D /* vc_clSelector.swift in Sources */,
 				98D58E6E1EE74EA30046735D /* MWSteelMaterialLimits.swift in Sources */,
@@ -699,7 +776,7 @@
 				98D58E5F1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift in Sources */,
 				98D58E5C1EE74EA30046735D /* MWLVLDesignData.swift in Sources */,
 				98D58E8A1EE74EA30046735D /* vc_FloorLLInfo.swift in Sources */,
-				98D58E5D1EE74EA30046735D /* vc_WBeamDesignPanel.swift in Sources */,
+				98D58E5D1EE74EA30046735D /* xxxvc_WBeamDesignPanel.swift in Sources */,
 				98D58ECA1EE74F480046735D /* MWCustomTableRowView.swift in Sources */,
 				98D58E5A1EE74EA30046735D /* MWBeamAnalysis.swift in Sources */,
 				98D58E631EE74EA30046735D /* Extensions.swift in Sources */,
