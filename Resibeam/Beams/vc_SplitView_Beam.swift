@@ -15,6 +15,9 @@ protocol beamDataDelegate{
     
     func updateSaveDocWithSteelWDesignChange(_ sectionData:MWSteelWSectionDesignData, designValues: MWSteelWDesignValues)
     
+    func updateSaveDocWithFlitchDesignChange(_ sectionData:MWFlitchSectionDesignData, designValues: MWFlitchDesignValues)
+    
+    
     func updateSaveDocWithSelectedDesignTabIndex(selectedTabIndex:Int)
     
     func changeShouldUpdateSaveDocStatus(_ B:Bool)
@@ -110,6 +113,10 @@ class vc_SplitView_Beam: NSSplitViewController, beamDataDelegate, statusBarDeleg
     
     func updateSaveDocWithSteelWDesignChange(_ sectionData:MWSteelWSectionDesignData, designValues: MWSteelWDesignValues){
         vcBeamData.updateSelectedSteelWBeamDesignValues(sectionData,designValues: designValues)
+    }
+    
+    func updateSaveDocWithFlitchDesignChange(_ sectionData:MWFlitchSectionDesignData, designValues: MWFlitchDesignValues){
+        vcBeamData.updateSelectedFlitchBeamDesignValues(sectionData, designValues: designValues)
     }
     
     func updateSaveDocWithSelectedDesignTabIndex(selectedTabIndex:Int){

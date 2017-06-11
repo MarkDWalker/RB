@@ -32,7 +32,7 @@ class MWFlitchBeamDesign: NSObject {
     func setValues(_ a:MWBeamAnalysis){
         self.a = a
         
-        a.selectedLVLDesignValues.setValues(a.selectedLVLDesignValues.limits.manufacturer, theGrade: a.selectedLVLDesignValues.limits.grade, memberWidth: a.selectedLVLSection.depth)
+        a.selectedFlitchDesignValues.setValues(a.selectedFlitchDesignValues.limits.species, theGrade: a.selectedFlitchDesignValues.limits.grade, memberWidth: a.selectedFlitchSection.depth)
         
         updateDesignSectionCollections()
     }
@@ -51,17 +51,17 @@ class MWFlitchBeamDesign: NSObject {
         for i in 0...a.shearComboResults.graphTotals.theDataCollection.count-1{
             //initialize the ith member
             //let woodLoadedSection = MWWoodLoadedDesignSection(thesectionData: a.selectedWoodSection)
-            let LVLLoadedSection = MWLVLLoadedDesignSection()
+            let FlitchLoadedSection = MWFlitchLoadedDesignSection()
             
             //add the new member to the collection
-            FlitchDesignSectionCollection.append(LVLLoadedSection)
+            FlitchDesignSectionCollection.append(FlitchLoadedSection)
             //set the remaining values of this ith item in collection
             FlitchDesignSectionCollection[i].location = Double(a.shearComboResults.graphTotals.theDataCollection[i].x)
-            FlitchDesignSectionCollection[i].setShear(Double(a.shearComboResults.graphTotals.theDataCollection[i].y), sectionData: a.selectedLVLSection)
+            FlitchDesignSectionCollection[i].setShear(Double(a.shearComboResults.graphTotals.theDataCollection[i].y), sectionData: a.selectedFlitchSection)
             
-            FlitchDesignSectionCollection[i].setMoment(Double(a.momentComboResults.graphTotals.theDataCollection[i].y), sectionData: a.selectedLVLSection)
+            FlitchDesignSectionCollection[i].setMoment(Double(a.momentComboResults.graphTotals.theDataCollection[i].y), sectionData: a.selectedFlitchSection)
             
-            FlitchDesignSectionCollection[i].setDeflection(Double(a.deflectionComboResults.graphTotals.theDataCollection[i].y), IOriginal:a.BeamGeo.I, EOriginal:a.BeamGeo.E,EAdjust:a.selectedLVLDesignValues.EAdjust, sectionData: a.selectedLVLSection)
+            FlitchDesignSectionCollection[i].setDeflection(Double(a.deflectionComboResults.graphTotals.theDataCollection[i].y), IOriginal:a.BeamGeo.I, EOriginal:a.BeamGeo.E,EAdjust:a.selectedFlitchDesignValues.EAdjust, sectionData: a.selectedFlitchSection)
             
         }//end for
     }
@@ -72,20 +72,20 @@ class MWFlitchBeamDesign: NSObject {
         super.init()
         
         a = aDecoder.decodeObject(forKey: "a") as! MWBeamAnalysis
-        a.selectedLVLSection = aDecoder.decodeObject(forKey: "LVLSectionData") as! MWLVLSectionDesignData
+        a.selectedFlitchSection = aDecoder.decodeObject(forKey: "FlitchSectionData") as! MWFlitchSectionDesignData
         
-        FlitchDesignSectionCollection = aDecoder.decodeObject(forKey: "LVLDesignSectionCollection") as! [MWLVLLoadedDesignSection]
+        FlitchDesignSectionCollection = aDecoder.decodeObject(forKey: "FlitchDesignSectionCollection") as! [MWFlitchLoadedDesignSection]
         
-        a.selectedLVLDesignValues = aDecoder.decodeObject(forKey: "LVLDesignValues") as! MWLVLDesignValues
+        a.selectedFlitchDesignValues = aDecoder.decodeObject(forKey: "FlitchDesignValues") as! MWFlitchDesignValues
         
     }
     
     
     func encodeWithCoder(_ aCoder: NSCoder) {
         aCoder.encode(a, forKey: "a")
-        aCoder.encode(a.selectedLVLSection, forKey: "LVLSectionData")
-        aCoder.encode(FlitchDesignSectionCollection, forKey: "LVLDesignSectionCollection")
-        aCoder.encode(a.selectedLVLDesignValues, forKey: "LVLDesignValues")
+        aCoder.encode(a.selectedFlitchSection, forKey: "FlitchSectionData")
+        aCoder.encode(FlitchDesignSectionCollection, forKey: "FlitchDesignSectionCollection")
+        aCoder.encode(a.selectedFlitchDesignValues, forKey: "FlitchDesignValues")
         
     }
 }

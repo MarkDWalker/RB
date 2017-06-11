@@ -953,6 +953,16 @@ class vc_BeamData: NSViewController, NSTableViewDataSource, NSTableViewDelegate,
         
     }
     
+    func updateSelectedFlitchBeamDesignValues(_ FlitchSection:MWFlitchSectionDesignData, designValues: MWFlitchDesignValues){
+        projectBeamCollection[selectedBeamListRow].selectedFlitchSection = FlitchSection
+        projectBeamCollection[selectedBeamListRow].selectedFlitchDesignValues = designValues
+        
+        saveData()
+        
+    }
+    
+    
+    
     func updateSelectedDesignTabIndex(selectedTabIndex:Int){
         guard selectedBeamListRow >= 0 && selectedBeamListRow < projectBeamCollection.count else{
             return

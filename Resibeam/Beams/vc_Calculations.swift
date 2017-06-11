@@ -14,6 +14,7 @@ class vc_Calculations: NSViewController {
     var woodBeamDesign = MWWoodBeamDesign()
     var lvlBeamDesign = MWLVLBeamDesign()
     var steelWBeamDesign = MWSteelWBeamDesign()
+    var flitchBeamDesign = MWFlitchBeamDesign()
     
     var fh:MWTextFormatHelper = MWTextFormatHelper()
     

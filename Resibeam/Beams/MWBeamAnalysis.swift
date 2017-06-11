@@ -36,6 +36,9 @@ class MWBeamAnalysis: NSObject, NSCoding{
     var selectedSteelWSection = MWSteelWSectionDesignData()
     var selectedSteelWDesignValues = MWSteelWDesignValues()
     
+    var selectedFlitchSection = MWFlitchSectionDesignData()
+    var selectedFlitchDesignValues = MWFlitchDesignValues()
+    
     var selectedDesignTab:Int = -1
     
     override init(){

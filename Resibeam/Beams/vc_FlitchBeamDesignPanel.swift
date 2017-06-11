@@ -1,5 +1,5 @@
 //
-//  vc_WoodBeamDesignPanel.swift
+//  vc_FlitchBeamDesignPanel.swift
 //  ResiBeam_V0.0.7
 //
 //  Created by Mark Walker on 6/19/16.
@@ -60,13 +60,13 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
         var counter = 0
         repeat{   //repeat loop for first table
             let tableString = (sectionTableView.view(atColumn: 0, row: counter, makeIfNecessary: true) as! NSTableCellView).textField!.stringValue
-            let savedShapeString = design.a.selectedWoodSection.shape as String
+            let savedShapeString = design.a.selectedFlitchSection.shape as String
             if savedShapeString == tableString{
                 rowForSectionTable = counter
             }
             counter+=1
         }while rowForSectionTable == -1 && counter < sectionTableView.numberOfRows //todo Check for error if last beam is selected
-        Swift.print("before sectionTableView selection func UpdateViews() --grade: \(design.a.selectedWoodDesignValues.limits.grade.rawValue)")
+        Swift.print("before sectionTableView selection func UpdateViews() --grade: \(design.a.selectedFlitchDesignValues.limits.grade.rawValue)")
         sectionTableView.selectRowIndexes(IndexSet(integer: rowForSectionTable), byExtendingSelection: false)
         sectionTableView.scrollRowToVisible(rowForSectionTable)
         //end selects section in tableview
@@ -78,13 +78,13 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
         counter = 0
         let gradeTableRowCount = gradeTableView.numberOfRows
         
-        Swift.print("before loop func UpdateViews() --grade: \(design.a.selectedWoodDesignValues.limits.grade.rawValue)")
+        Swift.print("before loop func UpdateViews() --grade: \(design.a.selectedFlitchDesignValues.limits.grade.rawValue)")
         repeat{   //repeat loop for second table
             
             let tableGradeString = (gradeTableView.view(atColumn: 0, row: counter, makeIfNecessary: true) as! NSTableCellView).textField!.stringValue
             let tableSpeciesString = (gradeTableView.view(atColumn: 1, row: counter, makeIfNecessary: true) as! NSTableCellView).textField!.stringValue
-            let savedGradeString = design.a.selectedWoodDesignValues.limits.grade.rawValue
-            let savedSpeciesString = design.a.selectedWoodDesignValues.limits.species.rawValue
+            let savedGradeString = design.a.selectedFlitchDesignValues.limits.grade.rawValue
+            let savedSpeciesString = design.a.selectedFlitchDesignValues.limits.species.rawValue
             
             
             
@@ -121,8 +121,8 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
         if segue.identifier == "BeamCalculations"{
             let vc_Calcs = segue.destinationController as! vc_Calculations
             
-            vc_Calcs.woodBeamDesign = self.design
-            vc_Calcs.calcType = "Wood"
+            vc_Calcs.flitchBeamDesign = self.design
+            vc_Calcs.calcType = "Flitch"
         }
         
     }
@@ -139,7 +139,7 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
             }
             
             if table.identifier == "0"{
-                design.a.selectedWoodSection.setSectionData(table.selectedRow)
+                design.a.selectedFlitchSection.setSectionData(table.selectedRow)
                 let existingRowSelected = gradeTableView.selectedRow
                 gradeTableView.reloadData()
                 
@@ -153,7 +153,7 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
                 }
                 
                 //take the user selection update the model and save data
-                design.a.selectedWoodDesignValues.setValues(design.a.selectedWoodDesignValues.limits.species, theGrade: design.a.selectedWoodDesignValues.limits.grade, memberWidth: design.a.selectedWoodSection.depth)
+                design.a.selectedFlitchDesignValues.setValues(design.a.selectedFlitchDesignValues.limits.species, theGrade: design.a.selectedFlitchDesignValues.limits.grade, memberWidth: design.a.selectedFlitchSection.depth)
                 design.updateDesignSectionCollections()
                 
                 //update the tables
@@ -161,7 +161,7 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
                 adjustmentTableView.reloadData()
                 
                 if delegate != nil && shouldUpdateSaveDocOnSelectionChange == true{
-                    delegate?.updateSaveDocWithWoodDesignChange(design.a.selectedWoodSection, designValues: design.a.selectedWoodDesignValues)
+                    delegate?.updateSaveDocWithFlitchDesignChange(design.a.selectedFlitchSection, designValues: design.a.selectedFlitchDesignValues)
                 }
                 //end take the user selection update the model and save data
                 
@@ -197,7 +197,7 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
                 
                 
                 //take the user selection update the model and save data
-                design.a.selectedWoodDesignValues.setValues(speciesToSet, theGrade: gradeToSet, memberWidth: design.a.selectedWoodSection.depth)
+                design.a.selectedFlitchDesignValues.setValues(speciesToSet, theGrade: gradeToSet, memberWidth: design.a.selectedFlitchSection.depth)
                 
                 design.updateDesignSectionCollections()
                 
@@ -206,7 +206,7 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
                 adjustmentTableView.reloadData()
                 
                 if delegate != nil && shouldUpdateSaveDocOnSelectionChange == true{
-                    delegate?.updateSaveDocWithWoodDesignChange(design.a.selectedWoodSection, designValues: design.a.selectedWoodDesignValues)
+                    delegate?.updateSaveDocWithFlitchDesignChange(design.a.selectedFlitchSection, designValues: design.a.selectedFlitchDesignValues)
                 }
                 //end take the user selection update the model and save data
                 
@@ -234,8 +234,8 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         
-        let tempSectionData = MWWoodSectionDesignData()
-        let tempGradeData = MWWoodDesignValues()
+        let tempSectionData = MWFlitchSectionDesignData()
+        let tempGradeData = MWFlitchDesignValues()
         
         let strIdentifier:NSString = tableColumn!.identifier as NSString
         //let intIdentifier:Int = strIdentifier.integerValue
@@ -270,25 +270,25 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
         }else if tableView.identifier == "1"{ //the member grade table
             
             if row == 0 {
-                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.denseSelectStructural, memberWidth: design.a.selectedWoodSection.depth)
+                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.denseSelectStructural, memberWidth: design.a.selectedFlitchSection.depth)
             }else if row == 1{
-                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.selectStructural, memberWidth: design.a.selectedWoodSection.depth)
+                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.selectStructural, memberWidth: design.a.selectedFlitchSection.depth)
             }else if row == 2{
-                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.nonDenseSelectStructural, memberWidth: design.a.selectedWoodSection.depth)
+                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.nonDenseSelectStructural, memberWidth: design.a.selectedFlitchSection.depth)
             }else if row == 3{
-                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.no1Dense, memberWidth: design.a.selectedWoodSection.depth)
+                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.no1Dense, memberWidth: design.a.selectedFlitchSection.depth)
             }else if row == 4{
-                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.no1, memberWidth: design.a.selectedWoodSection.depth)
+                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.no1, memberWidth: design.a.selectedFlitchSection.depth)
             }else if row == 5{
-                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.no1NonDense, memberWidth: design.a.selectedWoodSection.depth)
+                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.no1NonDense, memberWidth: design.a.selectedFlitchSection.depth)
             }else if row == 6{
-                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.no2Dense, memberWidth: design.a.selectedWoodSection.depth)
+                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.no2Dense, memberWidth: design.a.selectedFlitchSection.depth)
             }else if row == 7{
-                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.no2, memberWidth: design.a.selectedWoodSection.depth)
+                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.no2, memberWidth: design.a.selectedFlitchSection.depth)
             }else if row == 8{
-                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.no2NonDense, memberWidth: design.a.selectedWoodSection.depth)
+                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.no2NonDense, memberWidth: design.a.selectedFlitchSection.depth)
             }else if row == 9{
-                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.no3AndStud, memberWidth: design.a.selectedWoodSection.depth)
+                tempGradeData.setValues(speciesEnum.syp, theGrade: woodGradeEnum.no3AndStud, memberWidth: design.a.selectedFlitchSection.depth)
             }
             
             
@@ -392,28 +392,28 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
                 
             }else if tableColumn?.identifier == "fbfactor"{
                 if row == 0{
-                    cell.textField?.stringValue = "\(design.a.selectedWoodDesignValues.wF.Cd)"
+                    cell.textField?.stringValue = "\(design.a.selectedFlitchDesignValues.wF.Cd)"
                 }else if row == 1{
-                    cell.textField?.stringValue = "\(design.a.selectedWoodDesignValues.wF.CmFb)"
+                    cell.textField?.stringValue = "\(design.a.selectedFlitchDesignValues.wF.CmFb)"
                 }else if row == 2{
-                    cell.textField?.stringValue = "\(design.a.selectedWoodDesignValues.wF.CtFb)"
+                    cell.textField?.stringValue = "\(design.a.selectedFlitchDesignValues.wF.CtFb)"
                 }else if row == 3{
-                    cell.textField?.stringValue = "\(design.a.selectedWoodDesignValues.wF.Cf)"
+                    cell.textField?.stringValue = "\(design.a.selectedFlitchDesignValues.wF.Cf)"
                 }else if row == 4{
-                    cell.textField?.stringValue = "\(design.a.selectedWoodDesignValues.wF.Cfu)"
+                    cell.textField?.stringValue = "\(design.a.selectedFlitchDesignValues.wF.Cfu)"
                 }else if row == 5{
-                    cell.textField?.stringValue = "\(design.a.selectedWoodDesignValues.wF.Cr)"
+                    cell.textField?.stringValue = "\(design.a.selectedFlitchDesignValues.wF.Cr)"
                 }else if row == 6{
-                    cell.textField?.stringValue = "\(design.a.selectedWoodDesignValues.wF.Cl)"
+                    cell.textField?.stringValue = "\(design.a.selectedFlitchDesignValues.wF.Cl)"
                 }
                 
             }else if tableColumn?.identifier == "fvfactor"{
                 if row == 0{
-                    cell.textField?.stringValue = "\(design.a.selectedWoodDesignValues.wF.Cd)"
+                    cell.textField?.stringValue = "\(design.a.selectedFlitchDesignValues.wF.Cd)"
                 }else if row == 1{
-                    cell.textField?.stringValue = "\(design.a.selectedWoodDesignValues.wF.CmFv)"
+                    cell.textField?.stringValue = "\(design.a.selectedFlitchDesignValues.wF.CmFv)"
                 }else if row == 2{
-                    cell.textField?.stringValue = "\(design.a.selectedWoodDesignValues.wF.CtFv)"
+                    cell.textField?.stringValue = "\(design.a.selectedFlitchDesignValues.wF.CtFv)"
                 }else {
                     cell.textField?.stringValue = "n/a"
                     cell.textField?.textColor = NSColor.gray
@@ -421,9 +421,9 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
                 
             }else if tableColumn?.identifier == "efactor"{
                 if row == 1{
-                    cell.textField?.stringValue = "\(design.a.selectedWoodDesignValues.wF.CmE)"
+                    cell.textField?.stringValue = "\(design.a.selectedFlitchDesignValues.wF.CmE)"
                 }else if row == 2{
-                    cell.textField?.stringValue = "\(design.a.selectedWoodDesignValues.wF.CtE)"
+                    cell.textField?.stringValue = "\(design.a.selectedFlitchDesignValues.wF.CtE)"
                 }else {
                     cell.textField?.stringValue = "n/a"
                     cell.textField?.textColor = NSColor.gray
@@ -438,7 +438,7 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
                 return  cell
             }
             
-            guard design.woodDesignSectionCollection.count > 0 else{
+            guard design.FlitchDesignSectionCollection.count > 0 else{
                 cell.textField?.stringValue = ""
                 return  cell
             }
@@ -447,11 +447,11 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
                 cell.textField?.stringValue = NSString(format:"%i",row) as String
                 
             }else if tableColumn?.identifier == "Position"{
-                cell.textField?.stringValue = NSString(format:"%.2f",design.woodDesignSectionCollection[row].location) as String
+                cell.textField?.stringValue = NSString(format:"%.2f",design.FlitchDesignSectionCollection[row].location) as String
                 
             }else if tableColumn?.identifier == "Fb"{
-                cell.textField?.stringValue = NSString(format:"%.2f",design.a.selectedWoodDesignValues.limits.Fb) as String
-                if design.woodDesignSectionCollection[row].bendingStress * 1000 > design.a.selectedWoodDesignValues.FbAdjust{
+                cell.textField?.stringValue = NSString(format:"%.2f",design.a.selectedFlitchDesignValues.limits.Fb) as String
+                if design.FlitchDesignSectionCollection[row].bendingStress * 1000 > design.a.selectedFlitchDesignValues.FbAdjust{
                     cell.textField?.textColor = NSColor.red
                     
                 }else{
@@ -459,46 +459,46 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
                 }
                 
             }else if tableColumn?.identifier == "FbA"{
-                cell.textField?.stringValue = NSString(format:"%.2f", design.a.selectedWoodDesignValues.FbAdjust) as String
-                if design.woodDesignSectionCollection[row].bendingStress * 1000 > design.a.selectedWoodDesignValues.FbAdjust{
+                cell.textField?.stringValue = NSString(format:"%.2f", design.a.selectedFlitchDesignValues.FbAdjust) as String
+                if design.FlitchDesignSectionCollection[row].bendingStress * 1000 > design.a.selectedFlitchDesignValues.FbAdjust{
                     cell.textField?.textColor = NSColor.red
                     
                 }else{
                     cell.textField?.textColor = NSColor.blue
                 }
             }else if tableColumn?.identifier == "fb"{
-                cell.textField?.stringValue = NSString(format:"%.2f",design.woodDesignSectionCollection[row].bendingStress * 1000) as String
-                if design.woodDesignSectionCollection[row].bendingStress * 1000 > design.a.selectedWoodDesignValues.FbAdjust{
+                cell.textField?.stringValue = NSString(format:"%.2f",design.FlitchDesignSectionCollection[row].bendingStress * 1000) as String
+                if design.FlitchDesignSectionCollection[row].bendingStress * 1000 > design.a.selectedFlitchDesignValues.FbAdjust{
                     cell.textField?.textColor = NSColor.red
                 }else{
                     cell.textField?.textColor = NSColor.blue
                 }
             }else if tableColumn?.identifier == "Fv"{
-                cell.textField?.stringValue = NSString(format:"%.2f",design.a.selectedWoodDesignValues.limits.Fv) as String
-                if abs(design.woodDesignSectionCollection[row].shearStress * 1000) > design.a.selectedWoodDesignValues.FvAdjust{
+                cell.textField?.stringValue = NSString(format:"%.2f",design.a.selectedFlitchDesignValues.limits.Fv) as String
+                if abs(design.FlitchDesignSectionCollection[row].shearStress * 1000) > design.a.selectedFlitchDesignValues.FvAdjust{
                     cell.textField?.textColor = NSColor.red
                 }else{
                     cell.textField?.textColor = NSColor.blue
                 }
             }else if tableColumn?.identifier == "FvA"{
-                cell.textField?.stringValue = NSString(format:"%.2f",design.a.selectedWoodDesignValues.FvAdjust) as String
-                if abs(design.woodDesignSectionCollection[row].shearStress * 1000) > design.a.selectedWoodDesignValues.FvAdjust{
+                cell.textField?.stringValue = NSString(format:"%.2f",design.a.selectedFlitchDesignValues.FvAdjust) as String
+                if abs(design.FlitchDesignSectionCollection[row].shearStress * 1000) > design.a.selectedFlitchDesignValues.FvAdjust{
                     cell.textField?.textColor = NSColor.red
                 }else{
                     cell.textField?.textColor = NSColor.blue
                 }
             }else if tableColumn?.identifier == "fv"{
-                cell.textField?.stringValue = NSString(format:"%.2f",abs(design.woodDesignSectionCollection[row].shearStress * 1000)) as String
-                if abs(design.woodDesignSectionCollection[row].shearStress * 1000) > design.a.selectedWoodDesignValues.FvAdjust{
+                cell.textField?.stringValue = NSString(format:"%.2f",abs(design.FlitchDesignSectionCollection[row].shearStress * 1000)) as String
+                if abs(design.FlitchDesignSectionCollection[row].shearStress * 1000) > design.a.selectedFlitchDesignValues.FvAdjust{
                     cell.textField?.textColor = NSColor.red
                 }else{
                     cell.textField?.textColor = NSColor.blue
                 }
                 
             }else if tableColumn?.identifier == "Deflection"{
-                cell.textField?.stringValue = NSString(format:"%.2f", abs(design.woodDesignSectionCollection[row].deflection)) as String
+                cell.textField?.stringValue = NSString(format:"%.2f", abs(design.FlitchDesignSectionCollection[row].deflection)) as String
                 
-                if abs(( 12 * design.a.BeamGeo.length) / design.woodDesignSectionCollection[row].deflection) < Double(design.a.selectedWoodDesignValues.limits.deflectionLimit){
+                if abs(( 12 * design.a.BeamGeo.length) / design.FlitchDesignSectionCollection[row].deflection) < Double(design.a.selectedFlitchDesignValues.limits.deflectionLimit){
                     cell.textField?.textColor = NSColor.red
                 }else{
                     cell.textField?.textColor = NSColor.blue
@@ -506,14 +506,14 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
                 
             }else if tableColumn?.identifier == "DeflectionRatio"{
                 
-                let dRatio:Double = (design.a.BeamGeo.length * 12) / (abs(design.woodDesignSectionCollection[row].deflection))
+                let dRatio:Double = (design.a.BeamGeo.length * 12) / (abs(design.FlitchDesignSectionCollection[row].deflection))
                 if dRatio > 10000{
                     cell.textField?.stringValue = "NA"
                 }else{
                     cell.textField?.stringValue = NSString(format:"%.2f", dRatio) as String
                 }
                 
-                if abs((12 * design.a.BeamGeo.length) / design.woodDesignSectionCollection[row].deflection) < Double(design.a.selectedWoodDesignValues.limits.deflectionLimit){
+                if abs((12 * design.a.BeamGeo.length) / design.FlitchDesignSectionCollection[row].deflection) < Double(design.a.selectedFlitchDesignValues.limits.deflectionLimit){
                     cell.textField?.textColor = NSColor.red
                 }else{
                     cell.textField?.textColor = NSColor.blue
@@ -541,23 +541,23 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
         }
         
         if row == 0{
-            design.a.selectedWoodDesignValues.wF.Cd = doubleVal
+            design.a.selectedFlitchDesignValues.wF.Cd = doubleVal
         }else if row == 1{
-            design.a.selectedWoodDesignValues.wF.CmFb = doubleVal
+            design.a.selectedFlitchDesignValues.wF.CmFb = doubleVal
         }else if row == 2{
-            design.a.selectedWoodDesignValues.wF.CtFb = doubleVal
+            design.a.selectedFlitchDesignValues.wF.CtFb = doubleVal
         }else if row == 3{
-            design.a.selectedWoodDesignValues.wF.Cf = doubleVal
+            design.a.selectedFlitchDesignValues.wF.Cf = doubleVal
         }else if row == 4{
-            design.a.selectedWoodDesignValues.wF.Cfu = doubleVal
+            design.a.selectedFlitchDesignValues.wF.Cfu = doubleVal
         }else if row == 5{
-            design.a.selectedWoodDesignValues.wF.Cr = doubleVal
+            design.a.selectedFlitchDesignValues.wF.Cr = doubleVal
         }else if row == 6{
-            design.a.selectedWoodDesignValues.wF.Cl = doubleVal
+            design.a.selectedFlitchDesignValues.wF.Cl = doubleVal
         }
         
         //update the adjusted Fb values
-        design.a.selectedWoodDesignValues.setAdjustedValues()
+        design.a.selectedFlitchDesignValues.setAdjustedValues()
         updateViews()
         
     }
@@ -571,17 +571,17 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
         }
         
         if row == 0{
-            design.a.selectedWoodDesignValues.wF.Cd = doubleVal
+            design.a.selectedFlitchDesignValues.wF.Cd = doubleVal
         }else if row == 1{
-            design.a.selectedWoodDesignValues.wF.CmFv = doubleVal
+            design.a.selectedFlitchDesignValues.wF.CmFv = doubleVal
         }else if row == 2{
-            design.a.selectedWoodDesignValues.wF.CtFv = doubleVal
+            design.a.selectedFlitchDesignValues.wF.CtFv = doubleVal
         }else{
             //do nothing
         }
         
         //update the adjusted Fb values
-        design.a.selectedWoodDesignValues.setAdjustedValues()
+        design.a.selectedFlitchDesignValues.setAdjustedValues()
         updateViews()
         
     }
@@ -596,15 +596,15 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
         }
         
         if row == 1{
-            design.a.selectedWoodDesignValues.wF.CmE = doubleVal
+            design.a.selectedFlitchDesignValues.wF.CmE = doubleVal
         }else if row == 2{
-            design.a.selectedWoodDesignValues.wF.CtE = doubleVal
+            design.a.selectedFlitchDesignValues.wF.CtE = doubleVal
         }else{
             //do nothing
         }
         
         //update the adjusted Fb values
-        design.a.selectedWoodDesignValues.setAdjustedValues()
+        design.a.selectedFlitchDesignValues.setAdjustedValues()
         updateViews()
         
         
@@ -670,26 +670,26 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
     func sendReceiveFactor(_ theFactor:String, theDouble:Double, secondDouble:Double, thirdDouble:Double){
         
         if theFactor == "Cd"{
-            design.a.selectedWoodDesignValues.wF.Cd = theDouble
+            design.a.selectedFlitchDesignValues.wF.Cd = theDouble
         }else if theFactor == "Cm"{
-            design.a.selectedWoodDesignValues.wF.CmFb = theDouble
-            design.a.selectedWoodDesignValues.wF.CmFv = secondDouble
-            design.a.selectedWoodDesignValues.wF.CmE = thirdDouble
+            design.a.selectedFlitchDesignValues.wF.CmFb = theDouble
+            design.a.selectedFlitchDesignValues.wF.CmFv = secondDouble
+            design.a.selectedFlitchDesignValues.wF.CmE = thirdDouble
         }else if theFactor == "Ct"{
-            design.a.selectedWoodDesignValues.wF.CtFb = theDouble
-            design.a.selectedWoodDesignValues.wF.CtFv = secondDouble
-            design.a.selectedWoodDesignValues.wF.CtE = thirdDouble
+            design.a.selectedFlitchDesignValues.wF.CtFb = theDouble
+            design.a.selectedFlitchDesignValues.wF.CtFv = secondDouble
+            design.a.selectedFlitchDesignValues.wF.CtE = thirdDouble
         }else if theFactor == "Cf"{
-            design.a.selectedWoodDesignValues.wF.Cf = theDouble
+            design.a.selectedFlitchDesignValues.wF.Cf = theDouble
         }else if theFactor == "Cfu"{
-            design.a.selectedWoodDesignValues.wF.Cfu = theDouble
+            design.a.selectedFlitchDesignValues.wF.Cfu = theDouble
         }else if theFactor == "Cr"{
-            design.a.selectedWoodDesignValues.wF.Cr = theDouble
+            design.a.selectedFlitchDesignValues.wF.Cr = theDouble
         }else if theFactor == "Cl"{
-            design.a.selectedWoodDesignValues.wF.Cl = theDouble
+            design.a.selectedFlitchDesignValues.wF.Cl = theDouble
         }
         
-        design.a.selectedWoodDesignValues.setAdjustedValues()
+        design.a.selectedFlitchDesignValues.setAdjustedValues()
         adjustmentTableView.reloadData()
         resultsTableView.reloadData()
         updateStatus()
@@ -708,7 +708,7 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
         
         let nullColor = NSColor.clear
         
-        if design.woodDesignSectionCollection.count == 0{
+        if design.FlitchDesignSectionCollection.count == 0{
             statusColor = nullColor
             statusString = "no loads"
         }else{
@@ -719,20 +719,20 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
             
             
             
-            for i in 0...design.woodDesignSectionCollection.count-1{
+            for i in 0...design.FlitchDesignSectionCollection.count-1{
                 
                 
-                if design.woodDesignSectionCollection[i].bendingStress * 1000 > design.a.selectedWoodDesignValues.FbAdjust{
+                if design.FlitchDesignSectionCollection[i].bendingStress * 1000 > design.a.selectedFlitchDesignValues.FbAdjust{
                     statusColor = failColor
                     failCount += 1
                 }
                 
-                if abs(design.woodDesignSectionCollection[i].shearStress * 1000) >  design.a.selectedWoodDesignValues.FbAdjust{
+                if abs(design.FlitchDesignSectionCollection[i].shearStress * 1000) >  design.a.selectedFlitchDesignValues.FbAdjust{
                     statusColor = failColor
                     failCount += 1
                 }
                 
-                if abs(( 12 * design.a.BeamGeo.length) / design.woodDesignSectionCollection[i].deflection) < Double(design.a.selectedWoodDesignValues.limits.deflectionLimit){
+                if abs(( 12 * design.a.BeamGeo.length) / design.FlitchDesignSectionCollection[i].deflection) < Double(design.a.selectedFlitchDesignValues.limits.deflectionLimit){
                     if failCount == 0{
                         statusColor = warningColor
                     }else{
@@ -743,9 +743,9 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
             }//end for
             
             let stringZ = "\(design.a.BeamGeo.title)  |  "
-            let stringA = "Wood Section   |   "
-            let stringB = design.a.selectedWoodSection.shape as String
-            let stringC = "  |  \(design.a.selectedWoodDesignValues.limits.grade.rawValue) "
+            let stringA = "Flitch Section   |   "
+            let stringB = design.a.selectedFlitchSection.shape as String
+            let stringC = "  |  \(design.a.selectedFlitchDesignValues.limits.grade.rawValue) "
             statusString =  stringZ + stringA + stringB + stringC
             
         }
