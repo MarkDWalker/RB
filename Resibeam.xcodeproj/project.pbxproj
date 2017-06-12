@@ -38,7 +38,7 @@
 		98D58E5A1EE74EA30046735D /* MWBeamAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E171EE74EA30046735D /* MWBeamAnalysis.swift */; };
 		98D58E5B1EE74EA30046735D /* MWPersistentBeamInterfaceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E181EE74EA30046735D /* MWPersistentBeamInterfaceData.swift */; };
 		98D58E5C1EE74EA30046735D /* MWLVLDesignData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E191EE74EA30046735D /* MWLVLDesignData.swift */; };
-		98D58E5D1EE74EA30046735D /* xxxvc_WBeamDesignPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1A1EE74EA30046735D /* xxxvc_WBeamDesignPanel.swift */; };
+		98D58E5D1EE74EA30046735D /* vc_WBeamDesignPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1A1EE74EA30046735D /* vc_WBeamDesignPanel.swift */; };
 		98D58E5E1EE74EA30046735D /* vc_Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1B1EE74EA30046735D /* vc_Calculations.swift */; };
 		98D58E5F1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1C1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift */; };
 		98D58E601EE74EA30046735D /* MWBeamGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58E1D1EE74EA30046735D /* MWBeamGraphView.swift */; };
@@ -181,7 +181,7 @@
 		98D58E171EE74EA30046735D /* MWBeamAnalysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWBeamAnalysis.swift; path = Beams/MWBeamAnalysis.swift; sourceTree = "<group>"; };
 		98D58E181EE74EA30046735D /* MWPersistentBeamInterfaceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWPersistentBeamInterfaceData.swift; path = Beams/MWPersistentBeamInterfaceData.swift; sourceTree = "<group>"; };
 		98D58E191EE74EA30046735D /* MWLVLDesignData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWLVLDesignData.swift; path = Beams/MWLVLDesignData.swift; sourceTree = "<group>"; };
-		98D58E1A1EE74EA30046735D /* xxxvc_WBeamDesignPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = xxxvc_WBeamDesignPanel.swift; path = Beams/xxxvc_WBeamDesignPanel.swift; sourceTree = "<group>"; };
+		98D58E1A1EE74EA30046735D /* vc_WBeamDesignPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_WBeamDesignPanel.swift; path = Beams/vc_WBeamDesignPanel.swift; sourceTree = "<group>"; };
 		98D58E1B1EE74EA30046735D /* vc_Calculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_Calculations.swift; path = Beams/vc_Calculations.swift; sourceTree = "<group>"; };
 		98D58E1C1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWSteelWLoadedDesignSection.swift; path = Beams/MWSteelWLoadedDesignSection.swift; sourceTree = "<group>"; };
 		98D58E1D1EE74EA30046735D /* MWBeamGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWBeamGraphView.swift; path = Beams/MWBeamGraphView.swift; sourceTree = "<group>"; };
@@ -356,7 +356,7 @@
 				98D58E3B1EE74EA30046735D /* vc_FSFbSelector.swift */,
 				98D58E3C1EE74EA30046735D /* vc_FSFvSelector.swift */,
 				98D58E441EE74EA30046735D /* steelGradeEnum.swift */,
-				98D58E1A1EE74EA30046735D /* xxxvc_WBeamDesignPanel.swift */,
+				98D58E1A1EE74EA30046735D /* vc_WBeamDesignPanel.swift */,
 			);
 			name = "SteelW Beam Design";
 			sourceTree = "<group>";
@@ -796,7 +796,7 @@
 				98D58E5F1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift in Sources */,
 				98D58E5C1EE74EA30046735D /* MWLVLDesignData.swift in Sources */,
 				98D58E8A1EE74EA30046735D /* vc_FloorLLInfo.swift in Sources */,
-				98D58E5D1EE74EA30046735D /* xxxvc_WBeamDesignPanel.swift in Sources */,
+				98D58E5D1EE74EA30046735D /* vc_WBeamDesignPanel.swift in Sources */,
 				98D58ECA1EE74F480046735D /* MWCustomTableRowView.swift in Sources */,
 				98D58E5A1EE74EA30046735D /* MWBeamAnalysis.swift in Sources */,
 				98D58E631EE74EA30046735D /* Extensions.swift in Sources */,

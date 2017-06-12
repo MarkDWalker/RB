@@ -18,6 +18,10 @@ class vc_FlitchBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTable
     @IBOutlet weak var adjustmentTableView: NSTableView!
     @IBOutlet weak var resultsTableView: NSTableView!
     
+    @IBOutlet weak var tvFlitchTab: NSTabViewItem!
+    
+    @IBOutlet weak var tvBoltTab: NSTabViewItem!
+    
     //var a = MWBeamAnalysis() //this is set from the left panel data
     
     var design = MWFlitchBeamDesign()

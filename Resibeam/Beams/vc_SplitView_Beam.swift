@@ -35,6 +35,9 @@ class vc_SplitView_Beam: NSSplitViewController, beamDataDelegate, statusBarDeleg
     var vcLVLBeamDesign = vc_LVLBeamDesignPanel()
     var vcSteelWBeamDesign = vc_SteelWBeamDesignPanel()
     var vcFlitchBeamDesign = vc_FlitchBeamDesignPanel()
+    
+    var tvcFlitchDesign = tvc_FlitchDesign()
+    var vcFlitchBeamDesignPanel = vc_FlitchBeamDesignPanel()
    
     var statDelegate:statusBarDelegate!
     
@@ -62,9 +65,14 @@ class vc_SplitView_Beam: NSSplitViewController, beamDataDelegate, statusBarDeleg
         vcSteelWBeamDesign.delegate = self
         vcSteelWBeamDesign.statusDelegate = self
         
-        vcFlitchBeamDesign = tvcBeamDesign.childViewControllers[3].childViewControllers[0] as! vc_FlitchBeamDesignPanel
-        vcFlitchBeamDesign.delegate = self
-        vcFlitchBeamDesign.statusDelegate = self
+        
+//        tvcFlitchDesign = tvcBeamDesign.childViewControllers[3] as! tvc_FlitchDesign
+//        tvcFlitchDesign.delegate = self
+        
+        vcFlitchBeamDesignPanel = tvcBeamDesign.childViewControllers[3] as! vc_FlitchBeamDesignPanel
+        vcFlitchBeamDesignPanel.delegate = self
+        vcFlitchBeamDesignPanel.statusDelegate = self
+        
         
     }
     
@@ -116,7 +124,7 @@ class vc_SplitView_Beam: NSSplitViewController, beamDataDelegate, statusBarDeleg
     }
     
     func updateSaveDocWithFlitchDesignChange(_ sectionData:MWFlitchSectionDesignData, designValues: MWFlitchDesignValues){
-        vcBeamData.updateSelectedFlitchBeamDesignValues(sectionData, designValues: designValues)
+        //vcBeamData.updateSelectedFlitchBeamDesignValues(sectionData, designValues: designValues)
     }
     
     func updateSaveDocWithSelectedDesignTabIndex(selectedTabIndex:Int){

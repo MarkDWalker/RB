@@ -954,10 +954,10 @@ class vc_BeamData: NSViewController, NSTableViewDataSource, NSTableViewDelegate,
     }
     
     func updateSelectedFlitchBeamDesignValues(_ FlitchSection:MWFlitchSectionDesignData, designValues: MWFlitchDesignValues){
-        projectBeamCollection[selectedBeamListRow].selectedFlitchSection = FlitchSection
-        projectBeamCollection[selectedBeamListRow].selectedFlitchDesignValues = designValues
-        
-        saveData()
+//        projectBeamCollection[selectedBeamListRow].selectedFlitchSection = FlitchSection
+//        projectBeamCollection[selectedBeamListRow].selectedFlitchDesignValues = designValues
+//        
+//        saveData()
         
     }
     

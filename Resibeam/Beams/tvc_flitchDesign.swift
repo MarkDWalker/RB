@@ -17,22 +17,16 @@ class tvc_FlitchDesign: NSTabViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let tabFont = NSFont(name: "system font regular", size: 12)
-        
-        theTabView.font = tabFont!
-        
-        self.tabViewItems.removeLast(1)
+//        
+//        let tabFont = NSFont(name: "system font regular", size: 12)
+//        
+//        theTabView.font = tabFont!
+//        
+//        self.tabViewItems.removeLast(1)
         
         
     }
     
-    //    override func tabView(tabView: NSTabView, didSelect: NSTabViewItem?){
-    //        if self.delegate != nil{
-    //            theIndex:Int =
-    //            delegate?.updatedSaveDocWithSelectedDesignTabIndex(theIndex)
-    //        }
-    //    }
     
     
     
