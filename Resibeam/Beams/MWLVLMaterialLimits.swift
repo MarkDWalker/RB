@@ -6,7 +6,7 @@
 //  Copyright © 2016 Mark Walker. All rights reserved.
 //
 
-import Cocoa
+import Foundation
 
 class MWLVLMaterialLimits: NSObject {
     var manufacturer = manufacturerEnum.GeorgiaPacific

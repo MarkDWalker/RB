@@ -120,11 +120,11 @@ class vc_BeamGraphs: NSViewController{
             addControls()
             
             //now put the load combo results into the actual beam view object that are subviews
-            shearGraph.loadDataCollection(a.BeamGeo, theTitle: "Shear", theLoadComboResult: a.shearComboResults, xPadding: 80, yPadding: 50, optionalMaxUnits:"kips")
+            shearGraph.loadDataCollection(theBeam: a.BeamGeo, theTitle: "Shear", theLoadComboResult: a.shearComboResults, xPadding: 80, yPadding: 50, optionalMaxUnits:"kips")
             
-            momentGraph.loadDataCollection(a.BeamGeo, theTitle: "Moment", theLoadComboResult: a.momentComboResults, xPadding: 80, yPadding: 50, optionalMaxUnits: "ft-Kips")
+            momentGraph.loadDataCollection(theBeam: a.BeamGeo, theTitle: "Moment", theLoadComboResult: a.momentComboResults, xPadding: 80, yPadding: 50, optionalMaxUnits: "ft-Kips")
             
-            deflectionGraph.loadDataCollection(a.BeamGeo, theTitle: "Deflection", theLoadComboResult: a.deflectionComboResults, xPadding: 80, yPadding: 50, optionalMaxUnits: "inches")
+            deflectionGraph.loadDataCollection(theBeam: a.BeamGeo, theTitle: "Deflection", theLoadComboResult: a.deflectionComboResults, xPadding: 80, yPadding: 50, optionalMaxUnits: "inches")
             
             
             //redraw the view objects

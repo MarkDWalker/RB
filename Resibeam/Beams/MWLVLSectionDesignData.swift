@@ -302,6 +302,34 @@ class MWLVLSectionDesignData: NSObject {
             self.mySetWidth(7.00)
             self.area = self.depth * self.width
             self.sectionModulus = self.depth * self.depth * self.width / 6
+        }else if selectedRow == 36{
+            self.shapeSelected = true
+            self.shape = "1 - 1 3/4 x 24"
+            self.mySetDepth(24.00)
+            self.mySetWidth(1.75)
+            self.area = self.depth * self.width
+            self.sectionModulus = self.depth * self.depth * self.width / 6
+        }else if selectedRow == 37{
+            self.shapeSelected = true
+            self.shape = "2 - 1 3/4 x 24"
+            self.mySetDepth(24.00)
+            self.mySetWidth(3.5)
+            self.area = self.depth * self.width
+            self.sectionModulus = self.depth * self.depth * self.width / 6
+        }else if selectedRow == 38{
+            self.shapeSelected = true
+            self.shape = "3 - 1 3/4 x 24"
+            self.mySetDepth(24.00)
+            self.mySetWidth(5.25)
+            self.area = self.depth * self.width
+            self.sectionModulus = self.depth * self.depth * self.width / 6
+        }else if selectedRow == 39{
+            self.shapeSelected = true
+            self.shape = "4 - 1 3/4 x 24"
+            self.mySetDepth(24.00)
+            self.mySetWidth(7.00)
+            self.area = self.depth * self.width
+            self.sectionModulus = self.depth * self.depth * self.width / 6
         }
         
         //set the moment of inertia for all of the LVL sections

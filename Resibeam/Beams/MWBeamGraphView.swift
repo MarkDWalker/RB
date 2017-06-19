@@ -84,7 +84,7 @@ class MWBeamGraphView: NSView {
     
     
     //load member vars and does some initialization, do not want to override the NSViews init()
-    func loadDataCollection(_ theBeam:MWBeamGeometry, theTitle:NSString,theLoadComboResult:MWLoadComboResult, xPadding:Int, yPadding:Int, optionalMaxUnits:String = ""){
+    func loadDataCollection(theBeam:MWBeamGeometry, theTitle:NSString,theLoadComboResult:MWLoadComboResult, xPadding:Int, yPadding:Int, optionalMaxUnits:String = ""){
         
         
         support1 = theBeam.supportLocationA

@@ -211,7 +211,7 @@ class vc_LVLBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTableVie
         var rowCount:Int = 0
         
         if tableView.identifier! == "0" {
-            rowCount = 36
+            rowCount = 40
         }else if tableView.identifier! == "1"{
             rowCount = 2
         }else if tableView.identifier! == "2"{
