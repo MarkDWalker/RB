@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <title>Resi-Beam Interface Overview</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content=""/>
+    <meta name="generator" content="ParaDocs - www.paradocsapp.com" />
+    <meta name="keywords" content=""/>
+    <link href="../help.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  	<div='page'>
+		<div id='headerIconAndText'>
+			<table><tr><td>
+				<a href='../index.html'><img width='80' height='80' src='../images/AppIcon' style='float:left; margin: 0 5px 0 0; vertical-align:middle;' /></a>
+			</td><td>
+				<h1 style='vertical-align:middle'>Resi-Beam Interface Overview</h1>
+			</td></tr></table>
+		</div>
+  	
+  		<div id='bodyText'>
+    		<p><img width="750" height="472" src="../images/AppOverviewReduced" alt="AppOverviewReduced" /></p>
+
+<p>GENERAL:</p>
+
+<p>Generally the flow of the program runs from left to right.</p>
+
+<ul>
+<li><p>The left most column is used to add beams and beam geometry, and to add, edit and delete loads.</p></li>
+<li><p>The middle column shows the results of the loads applied to the specified beam. The analysis results will be shown for beam selected in the beam list in the first column.</p></li>
+<li><p>The right most column uses the forces shown in the analysis for a selected beam and calculates the adequacy of the chosen section, based upon the specified design conditions. The design results can be seen in the stress results section of this panel and also in the status bar at the top, which also shows some selected design information for additionl verification.</p></li>
+</ul>
+
+
+<p><img width="365" height="163" src="../images/image_0016" alt="image_0016" /></p>
+
+<p>BEAM LIST:</p>
+
+<p>The BEAM LIST is the left most column of the application and provides the opportunity create one (1) or more beams, to set the span (length) of the beams and also several other geometric properties that are used for the calculation of deflection and in the presentation of the deflection graph.</p>
+
+<p><img width="352" height="513" src="../images/image_0017" alt="image_0017" /></p>
+
+<p>BEAM INSPECTOR:<br/>
+The Beam Inspector allows for editing of the selected beam as well as adding, editing and deleting loads. It contains the following:</p>
+
+<p>-Beam Editor<br/>
+-Load List<br/>
+-Load Properties</p>
+
+<p>LOAD LIST:<br/>
+This panel provides the a listing of all of loads that have been applied to the beam. The loads can be reordered, which will affect their display location in the load diagram pane.</p>
+
+<p><img width="389" height="734" src="../images/image_0002" alt="image_0002" /></p>
+
+<p>LOAD DIAGRAM VIEW:<br/>
+This view shows a graphical representation of all of the loads that have been added to the beam. The beam currently selected in the load list will be blue, while the remainder of the loads will be brown.</p>
+
+<p>SHEAR, MOMENT &amp; DEFLECTION GRAPHS:<br/>
+These views show graphs of the respective items for the length of the beam. The green horizontal line represents the beam. The red line graph respresents the summation of all of the respective forces for all of the loads. The blue graph line represents the graph for the single load currently selected in the load list panel. Any grey line graphs are graphs of individual loads.</p>
+
+<p>Values that result from either an induvidual load or values that result from the summation of all of loads may be shown on the graphs, based upon the radio selection at the top of the middle pane.</p>
+
+<p><img width="442" height="700" src="../images/image_0018" alt="image_0018" /></p>
+
+<p>CURRENT MATERIAL SELECTION:<br/>
+The user can select Wood Lumber, LVL, or Steel W (W section), in order to get the resultant stresses in the loaded member.</p>
+
+<p><img width="441" height="177" src="../images/image_0019" alt="image_0019" /><br/>
+<img width="493" height="212" src="../images/image_0020" alt="image_0020" /><br/>
+<img width="497" height="253" src="../images/image_0021" alt="image_0021" /></p>
+
+<p>SECTION GEOMETRY PANEL:<br/>
+Based upon the selection in the Current Material Selection tab, different options will be available in the geometry panel. For wood standard lumber sections can be selected. For steel standard steel sections can be selected.</p>
+
+<p><img width="473" height="138" src="../images/image_0024" alt="image_0024" /><br/>
+<img width="468" height="117" src="../images/image_0023" alt="image_0023" /><br/>
+<img width="471" height="141" src="../images/image_0022" alt="image_0022" /></p>
+
+<p>GRADE PANEL:<br/>
+Again different options will be available for selection based upon the material selected. The grade of material will be the basis for the allowable stresses for the beam.</p>
+
+<p><img width="475" height="203" src="../images/image_0025" alt="image_0025" /><br/>
+<img width="474" height="195" src="../images/image_0026" alt="image_0026" /><br/>
+<img width="472" height="104" src="../images/image_0027" alt="image_0027" /></p>
+
+<p>ADJUSTMENT FACTORS:<br/>
+This pane allows further adjustments to the allowable stresses.</p>
+
+<p><img width="421" height="196" src="../images/image_0028" alt="image_0028" /></p>
+
+<p>STRESS RESULTS:<br/>
+This table shows the allowable bending stresses (Fb), adjusted allowable bending stresses (FbA), and the acutal bending stresses (fb) in psi, the allowable shear stresses (Fv), the adjusted allowable shear stress (FvA), and actual shear stress (fv) in psi, and also the allowable deflection alongside the actual deflections.</p>
+
+<p>Any bending stress, shear stress or deflection in the member that exceeds the design limits will be shown in red. Currently the delfection limit is set at L/240 for the beam deflection with all of the loads applied.</p>
+    	</div>
+    	
+    	<div id='seeAlso'>
+	<HR/>
+	<H1>See Also</H1>
+	
+<p> <a href="./BeamEditor.html">Beam Editor</a> </p>
+
+</div>
+
+    	
+    </div>
+  </body>
+</html>

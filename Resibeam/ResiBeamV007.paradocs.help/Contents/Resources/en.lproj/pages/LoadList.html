@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <title>Load List and Load Properties</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content=""/>
+    <meta name="generator" content="ParaDocs - www.paradocsapp.com" />
+    <meta name="keywords" content="second, page, interesting"/>
+    <link href="../help.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  	<div='page'>
+		<div id='headerIconAndText'>
+			<table><tr><td>
+				<a href='../index.html'><img width='80' height='80' src='../images/AppIcon' style='float:left; margin: 0 5px 0 0; vertical-align:middle;' /></a>
+			</td><td>
+				<h1 style='vertical-align:middle'>Load List and Load Properties</h1>
+			</td></tr></table>
+		</div>
+  	
+  		<div id='bodyText'>
+    		<p>The load list contains the list of loads currently applied to the beam selected in the Beam List. The loads can be added, deleted and reordered. The load type can also be changed by clicking on the icon in the &lsquo;Type&rsquo; field.</p>
+
+<p><img width="340" height="169" src="../images/image_0030" alt="image_0030" /></p>
+
+<p>The Load Properties displays the data for the currently selected load, from the load list.</p>
+
+<p>LOAD DESCRIPTION:<br/>
+A string to describe the load.</p>
+
+<p>LOAD VALUE:<br/>
+The value of the load to be applied in kips.<br/>
+For concentrated load, this is the value in kips.<br/>
+For Uniform loads, this is the value in kips per foot.<br/>
+For linear loads, this is the value in kips of the largest value of the load.</p>
+
+<p>LOAD TYPE:<br/>
+The user should select one of the options, concentrated, uniform, or linear.</p>
+
+<p>For single concentrated loads, calculations are done based upon the standard beam equations at each data point along the beam, as specified in the NO OF DATA PTS. field of the beam geometry.</p>
+
+<p>For linear and uniform loads, an iterative approach is used, with the appropriate load applied at each prescribed point along the beam and the results summed up to arrive at a total result for each load.</p>
+
+<p>START LOCATION:<br/>
+This field is used for all load types. For concentrated loads, this is the location of the applied load. For uniform and linear load types, this field is the start location of the respective load.</p>
+
+<p>END LOCATION:<br/>
+This field is used for uniform and linear load, and is inactive for concentrated loads. For both uniform and linear, this is the location of the end of the load, and must be greater than the START LOCATION value.</p>
+
+<p>To edit the values for a particular load, first select the desired value in the load list and then press enter.</p>
+
+<p>A load can be added to the load list press the add button, represented by a &ldquo;+&rdquo; to quickly add a 1 kip concentrated load at the midpoint of the beam. This load can be modified once applied.</p>
+
+<p>to delete a load, first select a load in the load list, and then click the delete button, represented by &ldquo;-&rdquo; image. Note that at least one (1) load must be present.</p>
+    	</div>
+    	
+    	
+    	
+    </div>
+  </body>
+</html>

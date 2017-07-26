@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		981768C21F295D63007DFCEB /* ResiBeamV007.paradocs.help in Resources */ = {isa = PBXBuildFile; fileRef = 981768C11F295D63007DFCEB /* ResiBeamV007.paradocs.help */; };
 		981BB50A1EECB53C0018BACB /* vc_FlitchBeamDesignPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BB5091EECB53C0018BACB /* vc_FlitchBeamDesignPanel.swift */; };
 		981BB50C1EECB8660018BACB /* tvc_flitchDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BB50B1EECB8660018BACB /* tvc_flitchDesign.swift */; };
 		981BB50E1EECC29E0018BACB /* MWFlitchBeamDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BB50D1EECC29E0018BACB /* MWFlitchBeamDesign.swift */; };
@@ -109,7 +110,6 @@
 		98D58EB91EE74EE00046735D /* SnowLoadMapEast.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EAC1EE74EE00046735D /* SnowLoadMapEast.png */; };
 		98D58EBA1EE74EE00046735D /* A_Framing.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EAD1EE74EE00046735D /* A_Framing.png */; };
 		98D58EBB1EE74EE00046735D /* A_Section.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EAE1EE74EE00046735D /* A_Section.png */; };
-		98D58EBD1EE74F270046735D /* HelpBook.paradocs in Resources */ = {isa = PBXBuildFile; fileRef = 98D58EBC1EE74F270046735D /* HelpBook.paradocs */; };
 		98D58EC71EE74F480046735D /* wc_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58EBE1EE74F480046735D /* wc_Main.swift */; };
 		98D58EC81EE74F480046735D /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58EBF1EE74F480046735D /* WindowController.swift */; };
 		98D58EC91EE74F480046735D /* MWCalulationTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D58EC01EE74F480046735D /* MWCalulationTextView.swift */; };
@@ -144,6 +144,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		981768C11F295D63007DFCEB /* ResiBeamV007.paradocs.help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ResiBeamV007.paradocs.help; sourceTree = "<group>"; };
 		981BB5091EECB53C0018BACB /* vc_FlitchBeamDesignPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = vc_FlitchBeamDesignPanel.swift; path = Beams/vc_FlitchBeamDesignPanel.swift; sourceTree = "<group>"; };
 		981BB50B1EECB8660018BACB /* tvc_flitchDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tvc_flitchDesign.swift; path = Beams/tvc_flitchDesign.swift; sourceTree = "<group>"; };
 		981BB50D1EECC29E0018BACB /* MWFlitchBeamDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWFlitchBeamDesign.swift; path = Beams/MWFlitchBeamDesign.swift; sourceTree = "<group>"; };
@@ -252,7 +253,6 @@
 		98D58EAC1EE74EE00046735D /* SnowLoadMapEast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SnowLoadMapEast.png; path = Beams/LoadGenerator_Images/SnowLoadMapEast.png; sourceTree = "<group>"; };
 		98D58EAD1EE74EE00046735D /* A_Framing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = A_Framing.png; path = Beams/LoadGenerator_Images/A_Framing.png; sourceTree = "<group>"; };
 		98D58EAE1EE74EE00046735D /* A_Section.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = A_Section.png; path = Beams/LoadGenerator_Images/A_Section.png; sourceTree = "<group>"; };
-		98D58EBC1EE74F270046735D /* HelpBook.paradocs */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = HelpBook.paradocs; sourceTree = "<group>"; };
 		98D58EBE1EE74F480046735D /* wc_Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wc_Main.swift; sourceTree = "<group>"; };
 		98D58EBF1EE74F480046735D /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		98D58EC01EE74F480046735D /* MWCalulationTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWCalulationTextView.swift; sourceTree = "<group>"; };
@@ -451,7 +451,7 @@
 				98D58E201EE74EA30046735D /* Extensions.swift */,
 				98D58E0E1EE74EA30046735D /* MWButtonImageTableCellViewPrototype.swift */,
 				98D58E311EE74EA30046735D /* MWTextField_NumberInput.swift */,
-				98D58EBC1EE74F270046735D /* HelpBook.paradocs */,
+				981768C11F295D63007DFCEB /* ResiBeamV007.paradocs.help */,
 				988414281EED611000AB7D00 /* DocImages */,
 				98D58EA11EE74EC50046735D /* LoadGeneratorImages */,
 				98D58E8E1EE74EAA0046735D /* Beam Images */,
@@ -662,6 +662,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98D58E991EE74EBF0046735D /* 40x33 LinearDown.png in Resources */,
+				981768C21F295D63007DFCEB /* ResiBeamV007.paradocs.help in Resources */,
 				98D58EB21EE74EE00046735D /* C_OverView.png in Resources */,
 				98D58EB71EE74EE00046735D /* LiveLoadChart.png in Resources */,
 				98D58E9D1EE74EBF0046735D /* glyphicons-191-circle-plus.png in Resources */,
@@ -686,7 +687,6 @@
 				98D58EBA1EE74EE00046735D /* A_Framing.png in Resources */,
 				98D58E9A1EE74EBF0046735D /* 40x33_LinearUp.png in Resources */,
 				98D58E9B1EE74EBF0046735D /* 40x33_Uniform.png in Resources */,
-				98D58EBD1EE74F270046735D /* HelpBook.paradocs in Resources */,
 				98D58EA01EE74EBF0046735D /* row_Up.png in Resources */,
 				98D58EB61EE74EE00046735D /* B_Section.png in Resources */,
 				98D58EDA1EE7591C0046735D /* v0004_docCentered.icns in Resources */,
