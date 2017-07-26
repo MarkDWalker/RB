@@ -34,7 +34,7 @@ class vc_SplitView_Beam: NSSplitViewController, beamDataDelegate, statusBarDeleg
     var vcWoodBeamDesign = vc_WoodBeamDesignPanel()
     var vcLVLBeamDesign = vc_LVLBeamDesignPanel()
     var vcSteelWBeamDesign = vc_SteelWBeamDesignPanel()
-    var vcFlitchBeamDesign = vc_FlitchBeamDesignPanel()
+    //var vcFlitchBeamDesign = vc_FlitchBeamDesignPanel()
     
     var tvcFlitchDesign = tvc_FlitchDesign()
     var vcFlitchBeamDesignPanel = vc_FlitchBeamDesignPanel()
@@ -69,9 +69,9 @@ class vc_SplitView_Beam: NSSplitViewController, beamDataDelegate, statusBarDeleg
 //        tvcFlitchDesign = tvcBeamDesign.childViewControllers[3] as! tvc_FlitchDesign
 //        tvcFlitchDesign.delegate = self
         
-        vcFlitchBeamDesignPanel = tvcBeamDesign.childViewControllers[3] as! vc_FlitchBeamDesignPanel
-        vcFlitchBeamDesignPanel.delegate = self
-        vcFlitchBeamDesignPanel.statusDelegate = self
+//        vcFlitchBeamDesignPanel = tvcBeamDesign.childViewControllers[3] as! vc_FlitchBeamDesignPanel
+//        vcFlitchBeamDesignPanel.delegate = self
+//        vcFlitchBeamDesignPanel.statusDelegate = self
         
         
     }

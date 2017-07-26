@@ -87,7 +87,7 @@ class MWStructuralGraphData: NSObject{
             tempPoint.y = CGFloat(tempCalcValue)
             theDataCollection.append(tempPoint)
             incCounter = (incCounter + increment)
-        }//end for
+        }//end While
     }
     
     
