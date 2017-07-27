@@ -44,9 +44,9 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.7.7</string>
+	<string>2.0.0</string>
 	<key>CFBundleVersion</key>
-	<string>171307</string>
+	<string>20170727</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.productivity</string>
 	<key>LSMinimumSystemVersion</key>
@@ -97,5 +97,9 @@
 			</dict>
 		</dict>
 	</array>
+	<key>CFBundleHelpBookFolder</key>
+	<string>ResiBeamV004.paradocs.help</string>
+	<key>CFBundleHelpBookName</key>
+	<string>Resi-Beam Help</string>
 </dict>
 </plist>
