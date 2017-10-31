@@ -33,6 +33,10 @@
 	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleHelpBookFolder</key>
+	<string>ResiBeamV004.paradocs.help</string>
+	<key>CFBundleHelpBookName</key>
+	<string>Resi-Beam Help</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
@@ -44,9 +48,9 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.0.0</string>
+	<string>1.7.9</string>
 	<key>CFBundleVersion</key>
-	<string>20170727</string>
+	<string>20171031</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.productivity</string>
 	<key>LSMinimumSystemVersion</key>
@@ -97,9 +101,5 @@
 			</dict>
 		</dict>
 	</array>
-	<key>CFBundleHelpBookFolder</key>
-	<string>ResiBeamV004.paradocs.help</string>
-	<key>CFBundleHelpBookName</key>
-	<string>Resi-Beam Help</string>
 </dict>
 </plist>
