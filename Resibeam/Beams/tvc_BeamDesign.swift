@@ -22,7 +22,7 @@ class tvc_BeamDesign: NSTabViewController {
         
         theTabView.font = tabFont!
         
-        self.tabViewItems.removeLast(1)
+        //self.tabViewItems.removeLast(1)
         
         
     }
@@ -37,7 +37,7 @@ class tvc_BeamDesign: NSTabViewController {
     
     
     override func tabView(_ tabView: NSTabView, didSelect tabViewItem: NSTabViewItem?) {
-        updateDesignTabSelection(theTab: tabViewItem?.identifier as! Int)
+        updateDesignTabSelection(theTab: Int(tabViewItem?.identifier as! String)!)
         
         if tabViewItem?.identifier as! String == "2" {
             tabViewItem?.viewController?.viewWillAppear()
