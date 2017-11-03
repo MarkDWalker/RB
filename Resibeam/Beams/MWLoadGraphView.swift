@@ -9,7 +9,9 @@
 import AppKit
 
 
-class MWLoadGraphView: NSView {
+class MWLoadGraphView: NSView{
+    var delegate:beamDataDelegate?
+    
     var viewColor = NSColor.white
     var graphColor = NSColor.green
     var beamColor = NSColor.black
@@ -19,11 +21,14 @@ class MWLoadGraphView: NSView {
     var selectedLoadColor = NSColor.blue
     var loadBorderColor = NSColor.black
     var supportColor = NSColor.purple
+    var locationBarColor = NSColor.lightGray
     
     var xPath = NSBezierPath() //path for the x values
     var yPath = [NSBezierPath]() //path the y values
     var bPath = NSBezierPath() //path for the beam
     var sPath = NSBezierPath() //path for the supports
+    var locationPath = NSBezierPath()
+    var displayLocationPath = false
     
     var title:NSString = ""
     var length:NSString = ""
@@ -40,6 +45,44 @@ class MWLoadGraphView: NSView {
     var beamThickness:Double = 8
     
     var selectedLoadIndex:Int = 0
+    
+    var dragLocationControl:NSPoint = NSMakePoint(0, 0)
+    var dragLocationBeam:NSPoint = NSMakePoint(0, 0)
+    
+   override func mouseMoved(with event: NSEvent) {
+        dragLocationControl = event.locationInWindow
+    
+        let convertedX = dragLocationControl.x / CGFloat(getxScaleFactor())
+        dragLocationBeam.x = convertedX
+        //self.setNeedsDisplay(self.bounds)
+    }
+    
+  override  func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
+        Swift.print("dragging entered")
+        displayLocationPath = true
+        return NSDragOperation.copy
+    }
+    
+    override func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
+        return true
+    }
+    
+    override func concludeDragOperation(_ sender: NSDraggingInfo?) {
+        if delegate != nil{
+            delegate?.addConcentratedLoad()
+        }
+        
+        displayLocationPath = false
+    }
+    
+    override init(frame frameRect: NSRect) {
+        super.init(frame:frameRect);
+        self.register(forDraggedTypes: [NSPasteboardTypePNG])
+    }
+    
+    required init?(coder decoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     
     override func draw(_ dirtyRect: NSRect) {
@@ -61,6 +104,12 @@ class MWLoadGraphView: NSView {
         supportColor.set()
         sPath.lineWidth = 2
         sPath.stroke()
+        
+        //draw the bar
+        if displayLocationPath == true{
+            locationBarColor.set()
+            locationPath.stroke()
+        }
       
         
         for j in 0...yPath.count-1{
@@ -110,7 +159,7 @@ class MWLoadGraphView: NSView {
         //end get max x value
         
         
-        // get the max y value which is the sum if the y values of the loads
+        // get the max y value which is the sum of the y values of the loads
         var tempY:Double = 0
         yPath.removeAll(keepingCapacity: false)
         
@@ -145,6 +194,15 @@ class MWLoadGraphView: NSView {
         self.subviews.removeAll()
         drawTitle()
         drawSupports()
+    }
+    
+    func drawLocationBar(){
+        let P1:NSPoint = NSPoint(x: dragLocationControl.x, y:0)
+        let P2:NSPoint = NSPoint(x: dragLocationControl.x, y:self.frame.height)
+        locationPath.removeAllPoints()
+        locationPath.move(to: P1)
+        locationPath.line(to: P2)
+        
     }
     
     func drawBeam(_ dataCollection:[NSPoint]){
