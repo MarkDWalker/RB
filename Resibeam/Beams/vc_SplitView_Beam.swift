@@ -21,6 +21,8 @@ protocol beamDataDelegate{
     func updateSaveDocWithSelectedDesignTabIndex(selectedTabIndex:Int)
     
     func changeShouldUpdateSaveDocStatus(_ B:Bool)
+    
+    func addConcentratedLoad()
 }
 
 
@@ -47,8 +49,10 @@ class vc_SplitView_Beam: NSSplitViewController, beamDataDelegate, statusBarDeleg
         
         vcBeamData = self.childViewControllers[0] as! vc_BeamData
         vcBeamData.delegate = self
+    
         
         vcBeamGraphs = self.childViewControllers[1] as! vc_BeamGraphs
+        vcBeamGraphs.splitViewDelegate = self
         
         tvcBeamDesign = self.childViewControllers[2] as! tvc_BeamDesign
         tvcBeamDesign.delegate = self
@@ -141,6 +145,13 @@ class vc_SplitView_Beam: NSSplitViewController, beamDataDelegate, statusBarDeleg
         if statDelegate != nil{
             statDelegate.updateStatus(theString: theString, theColor: theColor)
         }
+    }
+    
+    
+    //functions to allow loadGraph to add loads from functions in the vcBeamData
+    
+    func addConcentratedLoad(){
+        vcBeamData.addLoad(self)
     }
     
     
