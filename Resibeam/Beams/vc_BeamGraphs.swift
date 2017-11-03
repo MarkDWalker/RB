@@ -20,6 +20,7 @@ class vc_BeamGraphs: NSViewController{
     //MARK: Public Vars
     //this defines the protocol and this object as the master
     var delegate: graphDataDelegate?
+    var splitViewDelegate:beamDataDelegate?
     
     //Four custom views to add to the view Controller
     var loadGraph = MWLoadGraphView()
@@ -48,8 +49,9 @@ class vc_BeamGraphs: NSViewController{
     
     override func viewDidLoad() {
         
+        
         super.viewDidLoad()
-    
+        
         updateGraphs()
     }
     
@@ -99,6 +101,10 @@ class vc_BeamGraphs: NSViewController{
 //        a.appendLoadCollection(cLoad)
         
         
+    }
+    
+    override func rightMouseDragged(with event: NSEvent) {
+        Swift.print("right drag fired")
     }
     
     
@@ -172,6 +178,8 @@ class vc_BeamGraphs: NSViewController{
     }
     
     override func viewDidLayout() {
+        
+        loadGraph.delegate = self.splitViewDelegate
         
         if a.loadCollection.count > 0{
             
