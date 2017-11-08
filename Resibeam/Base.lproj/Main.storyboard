@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -6919,6 +6919,11 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="Fy5-ih-QJk"/>
                                 </constraints>
                             </box>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C7F-BP-2HZ" customClass="DragImageView" customModule="Resibeam" customModuleProvider="target">
+                                <rect key="frame" x="265" y="274" width="35" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="12x33_concentrated" id="ZBn-XR-N2f"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="MSK-A9-V4c" firstAttribute="top" secondItem="uLn-tX-yFD" secondAttribute="top" constant="20" id="2G8-6R-cto"/>

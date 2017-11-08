@@ -12,6 +12,7 @@
 		981BB50C1EECB8660018BACB /* tvc_flitchDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BB50B1EECB8660018BACB /* tvc_flitchDesign.swift */; };
 		981BB50E1EECC29E0018BACB /* MWFlitchBeamDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981BB50D1EECC29E0018BACB /* MWFlitchBeamDesign.swift */; };
 		983DE4B81FAA5CC9007A30D2 /* DragImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DE4B71FAA5CC9007A30D2 /* DragImageView.swift */; };
+		9880E4B61FB14BCE00A2DFDC /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880E4B51FB14BCE00A2DFDC /* Window.swift */; };
 		9884142A1EED641800AB7D00 /* MWFlitchDesignData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988414291EED641800AB7D00 /* MWFlitchDesignData.swift */; };
 		9884142C1EED68A100AB7D00 /* MWFlitchDesignValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884142B1EED68A100AB7D00 /* MWFlitchDesignValues.swift */; };
 		9884142E1EED691F00AB7D00 /* MWFlitchLoadedDesignSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884142D1EED691F00AB7D00 /* MWFlitchLoadedDesignSection.swift */; };
@@ -150,6 +151,7 @@
 		981BB50B1EECB8660018BACB /* tvc_flitchDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tvc_flitchDesign.swift; path = Beams/tvc_flitchDesign.swift; sourceTree = "<group>"; };
 		981BB50D1EECC29E0018BACB /* MWFlitchBeamDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWFlitchBeamDesign.swift; path = Beams/MWFlitchBeamDesign.swift; sourceTree = "<group>"; };
 		983DE4B71FAA5CC9007A30D2 /* DragImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragImageView.swift; sourceTree = "<group>"; };
+		9880E4B51FB14BCE00A2DFDC /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 		988414291EED641800AB7D00 /* MWFlitchDesignData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWFlitchDesignData.swift; path = Beams/MWFlitchDesignData.swift; sourceTree = "<group>"; };
 		9884142B1EED68A100AB7D00 /* MWFlitchDesignValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWFlitchDesignValues.swift; path = Beams/MWFlitchDesignValues.swift; sourceTree = "<group>"; };
 		9884142D1EED691F00AB7D00 /* MWFlitchLoadedDesignSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWFlitchLoadedDesignSection.swift; path = Beams/MWFlitchLoadedDesignSection.swift; sourceTree = "<group>"; };
@@ -441,6 +443,7 @@
 				983DE4B71FAA5CC9007A30D2 /* DragImageView.swift */,
 				98D58ED81EE7588F0046735D /* Resibeam.entitlements */,
 				98D58DE21EE74C9D0046735D /* Main.storyboard */,
+				9880E4B51FB14BCE00A2DFDC /* Window.swift */,
 				98D58DDA1EE74C9D0046735D /* AppDelegate.swift */,
 				98D58DDC1EE74C9D0046735D /* ViewController.swift */,
 				98D58DDE1EE74C9D0046735D /* Document.swift */,
@@ -612,7 +615,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Mark Walker";
 				TargetAttributes = {
 					98D58DD61EE74C9D0046735D = {
@@ -800,6 +803,7 @@
 				98D58E5F1EE74EA30046735D /* MWSteelWLoadedDesignSection.swift in Sources */,
 				98D58E5C1EE74EA30046735D /* MWLVLDesignData.swift in Sources */,
 				98D58E8A1EE74EA30046735D /* vc_FloorLLInfo.swift in Sources */,
+				9880E4B61FB14BCE00A2DFDC /* Window.swift in Sources */,
 				98D58E5D1EE74EA30046735D /* vc_WBeamDesignPanel.swift in Sources */,
 				98D58ECA1EE74F480046735D /* MWCustomTableRowView.swift in Sources */,
 				98D58E5A1EE74EA30046735D /* MWBeamAnalysis.swift in Sources */,
@@ -860,7 +864,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -868,7 +874,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -910,7 +920,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -918,7 +930,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

@@ -51,8 +51,6 @@ class vc_WBeamDesignPanel: NSViewController, NSTableViewDataSource, NSTableViewD
     func updateViews(){
         
         Swift.print("func UpdateViews() --grade: \(design.a.selectedLVLDesignValues.limits.grade.rawValue)")
-        
-        let count = design.a.loadCollection.count
         guard design.a.loadCollection.count > 0 else{
             return
         }

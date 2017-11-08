@@ -876,6 +876,36 @@ class vc_BeamData: NSViewController, NSTableViewDataSource, NSTableViewDelegate,
         
     }
     
+    func addLoadConentratedFromDrag(location:CGFloat){
+        guard projectBeamCollection.count > selectedBeamListRow && selectedBeamListRow >= 0 else{
+            return
+        }
+        
+        
+        let selectedBeam = projectBeamCollection[selectedBeamListRow].BeamGeo
+        var loadLocation = selectedBeam.length/2
+        
+        if location != -1{
+            loadLocation = Double(location)
+        }
+        
+        let newLoad = MWLoadData(theDescription: "new_Conc_Load", theLoadValue: 1, theLoadType: "concentrated", theLoadStart: loadLocation, theLoadEnd: 0, theBeamGeo: selectedBeam)
+        
+        projectBeamCollection[selectedBeamListRow].loadCollection.append(newLoad)
+        sendBeamToDelegate(projectBeamCollection[selectedBeamListRow])
+        
+        beamListTableView.reloadData()
+        loadListTableView.reloadData()
+        
+        selectedLoadListRow = projectBeamCollection[selectedBeamListRow].loadCollection.count - 1
+        doc.saveData.beamInterfaceData.selectedLoadListRow = projectBeamCollection[selectedBeamListRow].loadCollection.count - 1
+        loadListTableView.selectRowIndexes(IndexSet(integer: selectedLoadListRow), byExtendingSelection: false)
+        
+        Swift.print("Made it to the end of addConentratedLoadFromDrag")
+        
+        saveData()
+    }
+    
     
     @IBAction func addLoad(_ sender: AnyObject) {
         
@@ -885,7 +915,13 @@ class vc_BeamData: NSViewController, NSTableViewDataSource, NSTableViewDelegate,
         
         
         let selectedBeam = projectBeamCollection[selectedBeamListRow].BeamGeo
-        let newLoad = MWLoadData(theDescription: "new_Conc_Load", theLoadValue: 1, theLoadType: "concentrated", theLoadStart: (selectedBeam.length/2), theLoadEnd: 0, theBeamGeo: selectedBeam)
+        let loadLocation = selectedBeam.length/2
+        
+//        if (sender as! beamDataDelegate)  && (sender as! beamDataDelegate).concentratedLoadLocation != -1{
+//           loadLocation = Double((sender as! beamDataDelegate).concentratedLoadLocation)
+//        }
+//
+        let newLoad = MWLoadData(theDescription: "new_Conc_Load", theLoadValue: 1, theLoadType: "concentrated", theLoadStart: loadLocation, theLoadEnd: 0, theBeamGeo: selectedBeam)
         
         projectBeamCollection[selectedBeamListRow].loadCollection.append(newLoad)
         sendBeamToDelegate(projectBeamCollection[selectedBeamListRow])

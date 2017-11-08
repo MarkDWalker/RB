@@ -22,14 +22,16 @@ protocol beamDataDelegate{
     
     func changeShouldUpdateSaveDocStatus(_ B:Bool)
     
-    func addConcentratedLoad()
+    func addConcentratedLoadFromDrag(location:CGFloat)
+
 }
 
 
 
 
 class vc_SplitView_Beam: NSSplitViewController, beamDataDelegate, statusBarDelegate {
-
+    var concentratedLoadLocation: CGFloat = -1
+    
     var vcBeamData = vc_BeamData()
     var vcBeamGraphs = vc_BeamGraphs()
     var tvcBeamDesign = tvc_BeamDesign()
@@ -40,6 +42,8 @@ class vc_SplitView_Beam: NSSplitViewController, beamDataDelegate, statusBarDeleg
     
     var tvcFlitchDesign = tvc_FlitchDesign()
     var vcFlitchBeamDesignPanel = vc_FlitchBeamDesignPanel()
+    
+    
    
     var statDelegate:statusBarDelegate!
     
@@ -150,8 +154,9 @@ class vc_SplitView_Beam: NSSplitViewController, beamDataDelegate, statusBarDeleg
     
     //functions to allow loadGraph to add loads from functions in the vcBeamData
     
-    func addConcentratedLoad(){
-        vcBeamData.addLoad(self)
+    func addConcentratedLoadFromDrag(location:CGFloat){
+        vcBeamData.addLoadConentratedFromDrag(location: location)
+        self.concentratedLoadLocation = -1
     }
     
     

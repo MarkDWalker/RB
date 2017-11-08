@@ -49,19 +49,31 @@ class MWLoadGraphView: NSView{
     var dragLocationControl:NSPoint = NSMakePoint(0, 0)
     var dragLocationBeam:NSPoint = NSMakePoint(0, 0)
     
-   override func mouseMoved(with event: NSEvent) {
-        dragLocationControl = event.locationInWindow
-    
-        let convertedX = dragLocationControl.x / CGFloat(getxScaleFactor())
-        dragLocationBeam.x = convertedX
-        //self.setNeedsDisplay(self.bounds)
-    }
     
   override  func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
         Swift.print("dragging entered")
         displayLocationPath = true
+
+//        let trackingArea = NSTrackingArea(rect: self.bounds, options: NSTrackingAreaOptions.mouseMoved, owner: self, userInfo: nil)
+//        self.addTrackingArea(trackingArea)
+        return NSDragOperation.copy
+    
+    }
+    
+    override func draggingUpdated(_ sender: NSDraggingInfo) -> NSDragOperation {
+        if displayLocationPath == true{
+            dragLocationControl = self.convert(sender.draggingLocation(), from: nil)
+            let beamX = (dragLocationControl.x - CGFloat(xPad/2)) / (CGFloat(getxScaleFactor()))
+            dragLocationBeam.x = ((beamX * 10).rounded())/10
+                
+            self.drawGraphs(selectedLoadIndex)
+           setNeedsDisplay(self.bounds)
+        }
+        
         return NSDragOperation.copy
     }
+    
+  
     
     override func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
         return true
@@ -69,10 +81,12 @@ class MWLoadGraphView: NSView{
     
     override func concludeDragOperation(_ sender: NSDraggingInfo?) {
         if delegate != nil{
-            delegate?.addConcentratedLoad()
+            delegate?.addConcentratedLoadFromDrag(location:dragLocationBeam.x)
         }
         
         displayLocationPath = false
+        self.drawGraphs(self.selectedLoadIndex)
+        setNeedsDisplay(self.bounds)
     }
     
     override init(frame frameRect: NSRect) {
@@ -105,7 +119,7 @@ class MWLoadGraphView: NSView{
         sPath.lineWidth = 2
         sPath.stroke()
         
-        //draw the bar
+        //draw vertical the bar
         if displayLocationPath == true{
             locationBarColor.set()
             locationPath.stroke()
@@ -194,6 +208,11 @@ class MWLoadGraphView: NSView{
         self.subviews.removeAll()
         drawTitle()
         drawSupports()
+        
+        if displayLocationPath == true{
+            drawLocationBar()
+        }
+        
     }
     
     func drawLocationBar(){
@@ -203,6 +222,16 @@ class MWLoadGraphView: NSView{
         locationPath.move(to: P1)
         locationPath.line(to: P2)
         
+        //draw the location text
+        let theLabel:NSTextField = NSTextField(frame: NSMakeRect(dragLocationControl.x+10,dragLocationControl.y, 70, 17))
+        theLabel.drawsBackground = false
+        theLabel.isBordered = false
+        
+        let xString = NSString(format: "%.2f", Double(dragLocationBeam.x))
+       
+        theLabel.stringValue = (xString as String) + " ft" 
+        theLabel.font=NSFont(name: "Verdana", size: 12)
+        self.addSubview(theLabel)
     }
     
     func drawBeam(_ dataCollection:[NSPoint]){
